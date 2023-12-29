@@ -1,0 +1,5611 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jaxyz.github.io/csc443/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../csc369/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>CSC443 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CSC443
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CSC443
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    CSC443
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#week-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      week 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="week 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. disk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ssd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. SSD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. SSD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-write-amplcation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Write amplcation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-7-principles-how-to-make-most-of-the-ssd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 7 principles how to make most of the SSD
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. RAID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. RAID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-raid-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 RAID 0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-raid-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 RAID 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-raid-01raid10" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 RAID 0+1(RAID10)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-raid-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 RAID 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-raid-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 RAID 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-how-to-store-tables-in-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 how to store tables in storage:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-how-table-keeps-track-of-each-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 How table keeps track of each page:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 How table keeps track of each page:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-linked-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 linked list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 Directory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-dam-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 DAM model:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-how-operations-implement" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 how operations implement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 how operations implement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.1 Scan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.2 Delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.3 Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#444-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.4 Insert
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-how-rows-are-stored-in-one-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 How rows are stored in one page
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Buffer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Buffer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#50-buffer-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.0 Buffer management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#51-evicton-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Evicton policy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Evicton policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-random" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Random
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-fifo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 FIFO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-lru" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3 LRU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.4 Clock
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Index
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Index">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-naive-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Naive way
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-zone-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Zone map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-sorted-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 sorted file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-binary-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Binary tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-hash-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.5 Hash table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-extendible-hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.6 Extendible hashing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-b-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.7 B-tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. LSM tree
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. LSM tree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-basic-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Basic LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-leveled-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Leveled LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-tier-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Tier LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-bloom-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Bloom filter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Bloom filter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-how-many-hash-functions-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 how many hash functions to use:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-operation-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Operation cost
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-monkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Monkey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-dstoeskv" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. DSTOESKV
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-tree-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      B-tree sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-way-merge-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-way Merge-Sort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#midterm-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Midterm review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Midterm review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-b-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. B-tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      *. Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iterations" class="md-nav__link">
+    <span class="md-ellipsis">
+      iterations:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="iterations:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 9
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-circular-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Circular log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hotcold-separation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. hot/cold separation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-checkpoint-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Checkpoint recovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cuckoo-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Cuckoo filter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Projection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Order by
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Order by">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-external-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 external sort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-distinct" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Distinct
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Distinct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-hash" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Hash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-group-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Group by
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Group by">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-what-is-group-byexample" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 What is group by(example)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-implementation-1-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Implementation 1: sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-implementation-2-hash" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Implementation 2: hash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Join
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Join">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-nested-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 nested loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-block-nested-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 block nested loop:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-index-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Index join
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-sort-merge-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 sort-merge join
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-grace-hash-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.5 grace - hash join
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-cardinality-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Cardinality Estimation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Cardinality Estimation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-add-to-the-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Add to the index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-k-minimum-valuekmv-sketch" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 K Minimum Value(KMV) sketch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Histogram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-countmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 CountMin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-query-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Query optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Query optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-pushing-selectionsprojections" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Pushing Selections&amp;Projections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-operator-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Operator fusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-consciousness-of-next-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 Consciousness of next operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-restrict-join-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4 Restrict join operation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 11
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-row-store-vs-column-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Row store vs column store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-data-storage-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Data storage alignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.  get query
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. scan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Insert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-simd" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. SIMD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Compression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Compression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-bit-vector-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Bit vector encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-dictionary-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 Dictionary encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-run-length-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Run-length encoding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-index-get-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Index get query
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 12
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-transaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Transaction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-common-inconsistency-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Common inconsistency problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Lock
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Lock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-shared-read-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Shared read lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-exclusive-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Exclusive lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-compare-2-locks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Compare 2 locks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-lock-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Lock Manager
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-inconsistency-problem-soln" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.  Inconsistency problem soln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-deadlock-in-2-phase-locking" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Deadlock in 2 phase locking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Recovery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Recovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Undo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-redo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Redo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-undoredo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Undo/Redo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csc369/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSC369
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#week-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      week 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="week 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. disk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ssd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. SSD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. SSD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-write-amplcation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Write amplcation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-7-principles-how-to-make-most-of-the-ssd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 7 principles how to make most of the SSD
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. RAID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. RAID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-raid-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 RAID 0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-raid-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 RAID 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-raid-01raid10" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 RAID 0+1(RAID10)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-raid-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 RAID 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-raid-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 RAID 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-how-to-store-tables-in-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 how to store tables in storage:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-how-table-keeps-track-of-each-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 How table keeps track of each page:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 How table keeps track of each page:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-linked-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 linked list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 Directory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-dam-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 DAM model:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-how-operations-implement" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 how operations implement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 how operations implement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.1 Scan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.2 Delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.3 Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#444-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4.4 Insert
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-how-rows-are-stored-in-one-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 How rows are stored in one page
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Buffer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Buffer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#50-buffer-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.0 Buffer management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#51-evicton-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Evicton policy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Evicton policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-random" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Random
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-fifo" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 FIFO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-lru" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.3 LRU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.4 Clock
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Index
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Index">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-naive-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Naive way
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-zone-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Zone map
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-sorted-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 sorted file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-binary-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Binary tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-hash-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.5 Hash table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-extendible-hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.6 Extendible hashing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-b-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.7 B-tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. LSM tree
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. LSM tree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-basic-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Basic LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-leveled-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Leveled LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-tier-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Tier LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-bloom-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Bloom filter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Bloom filter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-how-many-hash-functions-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 how many hash functions to use:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-operation-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Operation cost
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-monkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Monkey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-dstoeskv" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. DSTOESKV
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-tree-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      B-tree sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-way-merge-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-way Merge-Sort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#midterm-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Midterm review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Midterm review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-b-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. B-tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-lsm-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LSM tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      *. Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iterations" class="md-nav__link">
+    <span class="md-ellipsis">
+      iterations:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="iterations:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 9
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-circular-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Circular log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hotcold-separation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. hot/cold separation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-checkpoint-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Checkpoint recovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cuckoo-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Cuckoo filter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Projection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Order by
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Order by">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-external-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 external sort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-distinct" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Distinct
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Distinct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-hash" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Hash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-group-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Group by
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Group by">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-what-is-group-byexample" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 What is group by(example)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-implementation-1-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Implementation 1: sort
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-implementation-2-hash" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Implementation 2: hash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Join
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Join">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-nested-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 nested loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-block-nested-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 block nested loop:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-index-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Index join
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-sort-merge-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 sort-merge join
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-grace-hash-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.5 grace - hash join
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-cardinality-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Cardinality Estimation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Cardinality Estimation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-add-to-the-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Add to the index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-k-minimum-valuekmv-sketch" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 K Minimum Value(KMV) sketch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Histogram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-countmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 CountMin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-query-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Query optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Query optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-pushing-selectionsprojections" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Pushing Selections&amp;Projections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-operator-fusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Operator fusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-consciousness-of-next-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 Consciousness of next operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-restrict-join-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4 Restrict join operation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 11
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-row-store-vs-column-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Row store vs column store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-data-storage-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Data storage alignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.  get query
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-scan" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. scan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Insert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-simd" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. SIMD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Compression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Compression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-bit-vector-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Bit vector encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-dictionary-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 Dictionary encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-run-length-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Run-length encoding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-index-get-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Index get query
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 12
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Week 12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-transaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Transaction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-common-inconsistency-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Common inconsistency problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Lock
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Lock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-shared-read-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Shared read lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-exclusive-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Exclusive lock
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-compare-2-locks" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Compare 2 locks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-lock-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Lock Manager
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-inconsistency-problem-soln" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.  Inconsistency problem soln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-deadlock-in-2-phase-locking" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Deadlock in 2 phase locking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Recovery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Recovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Undo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-redo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Redo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-undoredo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Undo/Redo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h2 id="week-2">week 2</h2>
+<ul>
+<li>
+<p>volatility: data stay when power is off</p>
+</li>
+<li>
+<p>bytes addresable: 64-128 B</p>
+</li>
+<li>block addressable: 4-16 KB</li>
+</ul>
+<h3 id="1-disk">1. disk</h3>
+<p><img alt="image-20230912152211565" src="../csc443.assets/image-20230912152211565.png" /></p>
+<p>seek time - Move arms to position head on track (1-10 ms)</p>
+<p>rotational delay - wait for sector to rotate under head (0-5 ms)</p>
+<p>transfer time - moving data to/from disk surface (&gt; 0.01 ms)</p>
+<p>seek/rotational delays dominate</p>
+<p>disk layout principle(how to be fast):</p>
+<ul>
+<li>Large sequential reads/writes of adjacent sectors and tracks are fast</li>
+</ul>
+<p>soln to be large sequential reads/write:</p>
+<ul>
+<li>defragmentation</li>
+</ul>
+<h3 id="2-ssd">2. SSD</h3>
+<p><img alt="image-20230914112226114" src="../csc443.assets/image-20230914112226114.png" /></p>
+<p>SSD is divided into erase units(block), each erase unit is divided into page as screenshot above</p>
+<ul>
+<li>A page is the minimum read/write unit with typically 4kB, erase units typically 128kB or 256kB</li>
+<li>Pages must be written sequentially in an erase unit</li>
+<li>All data in an erase unit is erased at the same time</li>
+<li>Each erase unit has a lifetime (1-10K erases)</li>
+<li>within the erase unit, pages are written sequentially</li>
+</ul>
+<p>How pages are written and update in SSD:</p>
+<blockquote>
+<p>As the above screenshot shows, each erasing unit has multiple pages. Each page has 3 states: invalid, valid and free. The change of state of page requires different basic operations. Initially, the page is invalid and cannot be written. It can only be changed to free state through erase operation, then the page can be written. However, erase operation cannot erase one single page and must erase one entire erase unit. After the page becomes free, data can be written to the page and page state becomes valid. If we want to udate the data on that page, SSD will write new data on new page and the data on old page becomes stale. SSD will mark the old page from valid state to invalid state. Overall,  the meaning of page state:</p>
+<ul>
+<li>free: this page is empty and ready to write</li>
+<li>invalid: the data on the page is stale and is ready to be freed in GC</li>
+<li>valid: the data on the page is up to date and cannot be written</li>
+</ul>
+</blockquote>
+<p>Garbage Collection:</p>
+<blockquote>
+<p>As updates take place, more physical pages within the SSD get marked as invalid. Eventually, as the SSD runs out of free space, we must reclaim space taken up by invalid pages. The garbage collector picks the erase unit with the highest number of invalid pages. It migrates any remaining valid pages into an erase unit with free space, and it then erases the target erase unit</p>
+</blockquote>
+<p>Over-provisioning:</p>
+<blockquote>
+<p>Overprovisioning means any SSD is assigned more physical space than the logical capacity it exposes to the user. In this way, when encountering a scenario where the SSD is filled to full capacity with invalid pages, we can use this extra space as a temporary workspace to manage scheduled valid page merges and then put it back to user space after we reclaim blocks filled with invalid pages. Over-provisioning also allows  more invalid pages in user space to accumulate before free space runs out. In this way,  for each erase unit, there is a higher proportion on average of invalid pages and we could migrate fewer valid pages and thus reduces write amplification</p>
+</blockquote>
+<h4 id="21-write-amplcation">2.1 Write amplcation</h4>
+<p>Intuition:</p>
+<blockquote>
+<p>Since SSD has garbage collection at behind scene, for every page the application writes, we not only physically write that page and in addition migrate some pages to a new page to reclaim the page we are writing. To measure this extra work, we use WA. The formula of wa:</p>
+<p>WA = 1 + (# of valid page within the target erase unit) / (# of invalid page)</p>
+</blockquote>
+<p><strong>General formula:</strong></p>
+<p>let x be the fraction of valid page in the target erase unit GC selects and y be the total page number</p>
+<p>WA = 1 + <span class="arithmatex">\(\frac{xy}{(1-x)y}\)</span> = 1 + <span class="arithmatex">\(\frac{x}{1-x}\)</span></p>
+<p><strong>write-amp from the user’s perspective</strong>:</p>
+<p>suppose that B data items fit into each page and that the user updates one random entry in each request,</p>
+<p>WA = B * (1 + <span class="arithmatex">\(\frac{x}{1-x}\)</span>)</p>
+<p><strong>Worst-Case Write-Amplification:</strong></p>
+<p>e worst-case write-amplification occurs when every full erase unit in the SSD has the same number of invalid pages. In this case, the SSD is unable to pick an erase unit with especially few live pages left to migrate and can only copy to over-provisioning</p>
+<p>WA = B * (1 + <span class="arithmatex">\(\frac{\frac{L}{P}}{1 - \frac{L}{P}}\)</span>)</p>
+<p>WA Under Uniformly Random Writes:</p>
+<p>Uniformly randomly distributed write-amplification = B * (1 + <span class="arithmatex">\(\frac{\frac{L}{P}}{2*(1 - \frac{L}{P})}\)</span>)</p>
+<h4 id="22-7-principles-how-to-make-most-of-the-ssd">2.2 7 principles how to make most of the SSD</h4>
+<ol>
+<li>avoid small updates: because small Updates are terrible - they force reading a whole page and rewriting it.</li>
+<li>Avoid Random Updates: as they lead to garbage-collection overheads</li>
+<li>Instead write sequentially, and update data written at the same time all at once</li>
+<li>data die in different order, causing differen patterns of unavailable pages in SSD and might cause random updates</li>
+<li>Prioritize Reads over Writes</li>
+<li>Reads/Writes should be page aligned:</li>
+<li>why: for ex, Reading a misaligned page triggers 2 flash reads Updating a misaligned page triggers 2 flash reads and 2 flash writes</li>
+<li>Asynchronous I/Os for the win</li>
+<li>Defragmentation on SSDs is a Bad Idea</li>
+<li>Random read I/Os are fast, so relocating parts of a file to be close does not significantly improve read speed. On the other hand, it contributes to write-amplification and consumes the device’s lifetime.</li>
+<li>Artificial Over-Provisioning: The less data you store, the more space the SSD will have for performing efficient garbagecollection</li>
+<li>Over-Provisioning: the logical capacity of ssd is significantly smaller than the whole physical capacity</li>
+</ol>
+<h3 id="3-raid">3. RAID</h3>
+<p>PROBLEM RAID addresses:</p>
+<ul>
+<li>Our database size exceeds one drive and we need more storage</li>
+<li>A drive fails, and we need to recover its data</li>
+<li>We want to overcome the limits of one storage device speed</li>
+</ul>
+<p><strong>technical terms:</strong></p>
+<ul>
+<li>data striping: If we want to store a piece of data in data striping, this piece of data is segmented into equal-size partitions distributed over multiple disks, assuming the partition size is a page size(4096 bytes)</li>
+<li>data mirroring: Clone the piece of data on multiple disks</li>
+<li>parity block: It is a piece of block that is obtained by computing the XOR product of the aligned block row. It can be used to recover a block on failed disk, more can be seen in RAID 4</li>
+</ul>
+<h4 id="31-raid-0">3.1 RAID 0</h4>
+<p>What is RAID 0:</p>
+<blockquote>
+<p>RAID 0 is based on data striping, which is to divide each piece of data into multiple stripes and distribute over many disks. As the screenshot displays, if a piece of data size is 4 page size, then the data is split into block1, block2, block3 and block4 on 2 disks in pic. Then when the system wants to read or write that data, it can read or write block1 and block3 from disk1 and block2 and block4 on disk2 simultaneously from all the disks and join them together to reconstruct the entire data stream. However, if one of the disks fails, the entire data becomes corrupt and worthless since it cannot be recreated anymore</p>
+<p><img alt="raid 0" src="../csc443.assets/ngcb20.webp" /></p>
+</blockquote>
+<p>benefits:</p>
+<ol>
+<li>
+<p>Much faster sequential writes and reads</p>
+</li>
+<li>
+<p>Also improvement for random writes and reads due to load balancing</p>
+</li>
+</ol>
+<p>drawback(reason not practical):</p>
+<p>No redundancy. If one disk fails, we lose data</p>
+<h4 id="32-raid-1">3.2 RAID 1</h4>
+<p>What is RAID 1:</p>
+<blockquote>
+<p>RAID 1 uses the concept of data mirroring. Suppose the data size is 2 blocks in size, then the data is split into block1 and block2 and stored on both drives in pic. A multi-threaded process can access Block 1 from Disk 1 and Block 2 from Disk 2 at once as RAID 0. However, when it writes the data, it must write the 2 blocks on disk1 and also on disk2</p>
+<p><img alt="raid 1" src="../csc443.assets/ngcb20-16947005334823.webp" /></p>
+</blockquote>
+<p>benefits:</p>
+<ol>
+<li>Slower writes as they must make 2 copies </li>
+<li>Faster reads as we have a choice to read from a non-busy drive</li>
+</ol>
+<p>drawback:</p>
+<ol>
+<li>Allows recovery of a disk but costs 50% of storage capacity</li>
+</ol>
+<h4 id="33-raid-01raid10">3.3 RAID 0+1(RAID10)</h4>
+<p>What is RAID 0+1</p>
+<blockquote>
+<p>In this setup, multiple RAID 1 blocks are connected with each other to make it like RAID 0.</p>
+<p><img alt="raid 10" src="../csc443.assets/ngcb20-169470420826012.webp" /></p>
+</blockquote>
+<h4 id="34-raid-4">3.4 RAID 4</h4>
+<p><strong>Goal:</strong> exploiting more than 50% if the storage capacity while allowing recovery</p>
+<p><strong>What is RAID 4:</strong></p>
+<blockquote>
+<p>RAID 4 stripes the data across multiple disks. Say we have 1 piece of data 1 with 6 pages in size. The first 3 blocks of the data 1 is split into block A1, A2 and A3 and and the last 3 blocks are stored in block B1, B2 and B3 in the 3 disks as the screenshot. In addition, we also have dedicated disk 4 to store parity block Ap, which is computed as Ap = A1 <span class="arithmatex">\(\oplus\)</span> A2 <span class="arithmatex">\(\oplus\)</span> A3 and Bp = B1 <span class="arithmatex">\(\oplus\)</span> B2 <span class="arithmatex">\(\oplus\)</span> B3 after writes to A1, A2, A3 and B1, B2, B3 happen. When one disk fails, say disk 2 fails, we lose A2 and B2 block of the data 1. We recover these two blocks by computing A2 = A1 <span class="arithmatex">\(\oplus\)</span>A3 <span class="arithmatex">\(\oplus\)</span> Ap and B2 = B1 <span class="arithmatex">\(\oplus\)</span> B3 <span class="arithmatex">\(\oplus\)</span> Bp. When data 2 is stored on block C and D of the 4 disks, similarly process goes as data 1. In this way, we avoid data cloning. However, because all the parity information is written on a single disk and disk 4 bears most load which is a bottleneck, the write performance is low</p>
+<p><img alt="raid 4" src="../csc443.assets/ngcb20-16947019626896.webp" /></p>
+</blockquote>
+<ul>
+<li>
+<p>how RAID 4 recover data: the input is the data stripe</p>
+</li>
+<li>
+<p>limits: </p>
+</li>
+<li>parity can only recover 1 input(not multiple inputs). When a disk fails, we know which disk fail, we use the parity and other good inputs to recover corrupted input </li>
+<li>the parity drive becomes bottle neck for random write</li>
+</ul>
+<p><strong>how it handles Random Write:</strong> </p>
+<p>say we have a data with 3 pages in size and is splitted as block A1, A2 and A3, we want to update page A2:</p>
+<ol>
+<li><strong>Simple soln:</strong>We updates page A2 to be A2', read other aligned pages(A1 &amp; A3), then we update Ap' = A1 <span class="arithmatex">\(\oplus\)</span> A2' <span class="arithmatex">\(\oplus\)</span> A3</li>
+</ol>
+<p><strong>cost:</strong> Say we have N drives, the above process takes N-1 reads &amp; 2 write</p>
+<ol>
+<li><strong>Real soln:</strong> We read A2 and Ap, updates A2 to be A2', then update Ap' = A2 <span class="arithmatex">\(\oplus\)</span> A2' <span class="arithmatex">\(\oplus\)</span> Ap</li>
+</ol>
+<p><strong>costs</strong>: Say we have N drives, the above process takes 2 reads and 2 writes</p>
+<p><strong>how it handles sequential write:</strong></p>
+<blockquote></blockquote>
+<h4 id="35-raid-5">3.5 RAID 5</h4>
+<p>What is RAID 5:</p>
+<blockquote>
+<p>RAID 5 is very similar to RAID 4, but the parity info is distributed over all disks as Ap, Bp, Cp, Dp in screenshot. This has two benefits — First, there is no more a bottleneck as the parity stress evens out by using all the disks to store parity information. Second, there is no possibility of losing data redundancy since one disk does not store all the parity information.</p>
+<p><img alt="raid 5" src="../csc443.assets/ngcb20-16947026535789.webp" /></p>
+</blockquote>
+<p><strong>how it handles sequential writes:</strong></p>
+<ul>
+<li>sequential writes only have N/(N-1) overhead</li>
+</ul>
+<p><strong>how it handles random writes:</strong></p>
+<ul>
+<li>A random write requires 2 reads and 2 writes</li>
+<li>Random writes load is evenly distributed on all drives</li>
+</ul>
+<p><strong>sequential read:</strong></p>
+<ul>
+<li>Sequential Reads are as fast as possible</li>
+</ul>
+<p><strong>random read:</strong></p>
+<ul>
+<li>Random Reads have less flexibility than with mirroring</li>
+</ul>
+<p><strong>limit:</strong></p>
+<ul>
+<li>can only recover one disk</li>
+</ul>
+<p>Week 3</p>
+<h3 id="4-table">4. table</h3>
+<h4 id="41-how-to-store-tables-in-storage">4.1 how to store tables in storage:</h4>
+<p>Problem:</p>
+<ul>
+<li>Reading/writing from storage at units of less than ≈4KB is not possible(reason: because within a disk or an SSD the minimum unit of reading or write is 4kB, disk takes time to rotate)</li>
+<li>Reading/writing at very large units consumes memory and is less flexible for applications(this is a problem in memory)</li>
+</ul>
+<p>Soln:</p>
+<p>To balance, we introduce page and I/O. An I/O (input/output) is one read or write request of one database page. Each table is composed of one or more pages(page size is at least 4kB or mutiples or 4kB)</p>
+<h4 id="42-how-table-keeps-track-of-each-page">4.2 How table keeps track of each page:</h4>
+<h5 id="421-linked-list">4.2.1 linked list</h5>
+<p><img alt="image-20230919153348462" src="../csc443.assets/image-20230919153348462.png" /></p>
+<p>This is the simplest soln, but there are <strong>limits</strong>:</p>
+<ul>
+<li>entails synchronous I/Os, which do not exploit SSD parallelism(parallelism due to multiple chips)</li>
+<li>small I/Os. because linked list does not gurantee pages allocated sequentially </li>
+</ul>
+<h5 id="422-directory">4.2.2 Directory</h5>
+<p><strong>soln</strong> to 1st limit: (Employ directory to allow reading many pages asynchronously.)</p>
+<blockquote>
+<p><img alt="image-20230919154210284" src="../csc443.assets/image-20230919154210284.png" /></p>
+</blockquote>
+<p>soln to 2nd limit: (Store multiple database pages contiguously along “extents” (8-64 pages))</p>
+<blockquote>
+<p>In a file system, an "extent" refers to a contiguous block of storage space used to store a file's data. Extents are an alternative to the traditional method of storing file data, which involves dividing it into smaller blocks or clusters scattered across the storage medium</p>
+</blockquote>
+<p>How to keep track of directories:</p>
+<ul>
+<li>use cataglog</li>
+</ul>
+<blockquote></blockquote>
+<p>How to keep track of free pages/extent:</p>
+<ul>
+<li>linked list(slow soln)</li>
+</ul>
+<blockquote>
+<p><img alt="image-20230919154441487" src="../csc443.assets/image-20230919154441487.png" /></p>
+</blockquote>
+<ul>
+<li>bitmap(takes space)</li>
+</ul>
+<blockquote>
+<p><img alt="image-20230919154516480" src="../csc443.assets/image-20230919154516480.png" /></p>
+</blockquote>
+<h4 id="43-dam-model">4.3 DAM model:</h4>
+<p>The DAM model helps us analze the cost of 4 db operations. It applies to disk storage</p>
+<p><img alt="image-20230919152117561" src="../csc443.assets/image-20230919152117561.png" /></p>
+<ul>
+<li>B is a parameter variable(vary from 1 to page size)</li>
+<li>assume within a schema, B is constant size</li>
+</ul>
+<p>Limits of DAM model:</p>
+<ul>
+<li>Ignores that sequential disk reads are more economical</li>
+<li>Ignores that SSD asynchronous I/O are faster</li>
+<li>Ignores SSD garbagecollection due to random writes</li>
+</ul>
+<h4 id="44-how-operations-implement">4.4 how operations implement</h4>
+<p>N is number of entries in a table and B is number of entries stored in a page.</p>
+<h5 id="441-scan">4.4.1 Scan</h5>
+<ul>
+<li>Inefficient way to store pages of db:</li>
+</ul>
+<p><img alt="image-20230919152849033" src="../csc443.assets/image-20230919152849033.png" /></p>
+<p>This leads to N access of pages for each table, since each of the N entry is stored in a page</p>
+<ul>
+<li>Optimized way of storing pages of db:</li>
+</ul>
+<p><img alt="image-20230919152956891" src="../csc443.assets/image-20230919152956891.png" /></p>
+<p>The scan cost is O(N/B), the above inefficient soln is O(N)</p>
+<h5 id="442-delete">4.4.2 Delete</h5>
+<ul>
+<li>soln: Scan of the table. Delete the row and creates a “hole” in that page</li>
+</ul>
+<p><img alt="image-20230919155331348" src="../csc443.assets/image-20230919155331348.png" /></p>
+<ul>
+<li>Cost: O(1) write and O(N/B) reads</li>
+</ul>
+<h5 id="443-updates">4.4.3 Updates</h5>
+<ul>
+<li>soln: Scan and update. If newer version is too large, delete &amp; reinsert</li>
+<li>Cost: O(1) write and O(N/B) reads</li>
+</ul>
+<h5 id="444-insert">4.4.4 Insert</h5>
+<p>Insert a row in the table</p>
+<ul>
+<li>soln #1: Scan &amp; find space</li>
+<li>cost: O(N/B) reads and O(1) write</li>
+<li>soln #2: We use a separate linked list to keep track of non-full pages and insert</li>
+<li>cost: <ul>
+<li>O(1) reads &amp; O(1) write for <strong>fixed-sized entries</strong>(No scan cost)</li>
+<li>O(N/B) reads &amp; O(1) write for <strong>variable-sized entries</strong></li>
+</ul>
+</li>
+<li>soln #3: buffer insertions in memory until buffer full. Then a page fills up &amp; append to extent</li>
+<li>cost: No reads and O(1/B) of write</li>
+</ul>
+<h4 id="45-how-rows-are-stored-in-one-page">4.5 How rows are stored in one page</h4>
+<ul>
+<li>assume row is fixed length: </li>
+</ul>
+<p>a db page can contain N rows and the page has the following 2 layouts( or solns):</p>
+<p><img alt="image-20230919161302695" src="../csc443.assets/image-20230919161302695.png" /></p>
+<ul>
+<li>assume each row is variable length in a page:</li>
+</ul>
+<p>place the bitmap at the start of page and real row at the end of the page:</p>
+<p><img alt="image-20230919161540712" src="../csc443.assets/image-20230919161540712.png" /></p>
+<h3 id="5-buffer">5. Buffer</h3>
+<p>Why do we need buffer:</p>
+<blockquote>
+<p>To reduce read/write operations</p>
+</blockquote>
+<h4 id="50-buffer-management">5.0 Buffer management</h4>
+<p>buffer pool data structure:</p>
+<blockquote>
+<p>Buffer pool Keep copies of hot pages in memory. Buffer pool is a hashtable. Consist of frames, each containing one page of data(e.g., 4 KB). Eventually it fills up. Must evict pages to clear space.</p>
+<p>Each frame must keep some metadata :</p>
+<ul>
+<li>
+<p>Pin count - How many users are currently using this page</p>
+</li>
+<li>
+<p>Dirty flag - indicates whether the page has been updated</p>
+</li>
+</ul>
+</blockquote>
+<p>What does buffer pool do:</p>
+<ul>
+<li>initially:</li>
+</ul>
+<blockquote>
+<p>Initialize all frames pin_count and dirty bit to be 0</p>
+</blockquote>
+<ul>
+<li>When a page is requested by a new user:</li>
+</ul>
+<blockquote>
+<ol>
+<li>Checks the buffer pool to see if some frame contains the requested page and, if so, increments the pin_count of that frame. If the page is not in the pool, the buffer manager brings it in as follows:  </li>
+<li>Hash the page to the location frame in the buffer pool. If the frame is free, choose that frame as the final location. If not, under the hash collision, find the final free frame slot. If there is no free frame in buffer pool:<ol>
+<li>Chooses a frame with pin_count = 0</li>
+<li>If there are many frames with pin_count = 0, use eviction policy to choose the page. If no page has 0 pin_count,  wait until some page is released before responding to the page request  </li>
+<li>After the page is selected, use the hash collision policy to hash the page to the selected page.</li>
+</ol>
+</li>
+<li>Increments the new page's pin_count  </li>
+<li>If the dirty bit for the replacement frame is on, writes the page it contains to disk (that is, the disk copy of the page is overwritten with the contents of the frame) . Otherwise, just evict the page and it is to drop that page without writing to the disk</li>
+<li>Reads the requested page into the replacement frame  </li>
+<li>Returns the (main memory) address of the frame containing the requested page to the requestor  </li>
+</ol>
+</blockquote>
+<ul>
+<li>After the page is requested by old user and the page is requested to release:</li>
+</ul>
+<blockquote>
+<ol>
+<li>decrement the pin_count to unpin</li>
+</ol>
+</blockquote>
+<ul>
+<li>After the page is requested and the page is requested to modify:</li>
+</ul>
+<blockquote>
+<ol>
+<li>decrement the pin_count to unpin</li>
+<li>set the dirty bit on</li>
+</ol>
+</blockquote>
+<h4 id="51-evicton-policy">5.1 Evicton policy</h4>
+<h5 id="511-random">5.1.1 Random</h5>
+<p>Evict whichever page collides in the hash table with a new page</p>
+<ul>
+<li>pro: No additional metadata needed</li>
+<li>con: May evict a frequently used page</li>
+</ul>
+<h5 id="512-fifo">5.1.2 FIFO</h5>
+<p>Evict Page that was inserted the longest time ago.</p>
+<p>Implementation from the slide: queue(or actually ring buffer):</p>
+<p>Cons:</p>
+<ul>
+<li>
+<p>pages we evict have different frames than pages we insert</p>
+</li>
+<li>
+<p>soln:</p>
+<ul>
+<li>
+<p>need a hash collision algorithm</p>
+</li>
+<li>
+<p>need  10%-20% capacity</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Oldest page may still be frequently used. We’ll try to do better</p>
+</li>
+</ul>
+<h5 id="513-lru">5.1.3 LRU</h5>
+<p>Evict page that was used last the longest time ago</p>
+<p>Implementation: Doubly-linked list</p>
+<p>Cons:</p>
+<ul>
+<li></li>
+</ul>
+<h5 id="514-clock">5.1.4 Clock</h5>
+<p>Traverse hash table circularly as a clock. Set the page with 0 flag to be 1. Find the page with the first 0 flag and evict it.</p>
+<p>Pro:</p>
+<ol>
+<li>lower overheads as there is no queue</li>
+<li>bitmap takes little extra space</li>
+</ol>
+<p>Con:</p>
+<ol>
+<li>can evict “hotter” pages than LRU, But still better than FIFO</li>
+</ol>
+<h2 id="week-4">Week 4</h2>
+<h3 id="6-index">6. Index</h3>
+<p>Index is a way to efficiently optimized:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;v&#39;</span><span class="p">;</span>
+</span></code></pre></div>
+<p>To measure the performance, we introduce I/O cost and CPU cost:</p>
+<ul>
+<li>I/O cost: number of times to read/write a data page in order to find the target data page</li>
+<li>CPU cost: number of comparison to find the target data page and number of comparison to find the target key within the target data page</li>
+</ul>
+<h4 id="61-naive-way">6.1 Naive way</h4>
+<p>How data are stored and how search occurs:</p>
+<blockquote>
+<p>The db keeps track of the page of each table. When db wants to find a key, db just access each page of the table</p>
+</blockquote>
+<p>Operation:</p>
+<ul>
+<li>insert:</li>
+<li>searchSingleEntry</li>
+<li>delete</li>
+<li>update:</li>
+</ul>
+<p>cost: </p>
+<ul>
+<li>worst case: O(N/B) I/Os</li>
+</ul>
+<h4 id="62-zone-map">6.2 Zone map</h4>
+<p>How data is stored and how search occurs:</p>
+<blockquote>
+<p>The db keeps track of the page of each table. Each page stores two extra information: the max and min key within this page. This saves time when db wants to find a key within the page, but does not save time when db tries to find the target page. When db wants to find a key, db just access each page of the table</p>
+</blockquote>
+<p>Operation:</p>
+<ul>
+<li>insert:</li>
+<li>searchSingleEntry</li>
+<li>delete</li>
+<li>update:</li>
+</ul>
+<p>Pro:</p>
+<ul>
+<li>may be g</li>
+</ul>
+<p>cost: </p>
+<ul>
+<li>worst case: O(N/B) I/Os</li>
+</ul>
+<h4 id="63-sorted-file">6.3 sorted file</h4>
+<p>How data is stored and how search occurs:</p>
+<blockquote>
+<p>We can view one column A of table as a continuous array when we join the rows of the pages of the table. For this method, we ensure the A column stored on each page of the table is sorted. Then when we want to find the data page where the target key lies in, we look at the first key of each page <span class="arithmatex">\(k_1, k_2, ... k_N\)</span> and perform binary search. Ultimately, we find the target key k between <span class="arithmatex">\(k_i\)</span> and <span class="arithmatex">\(k_{i+1}\)</span> We can conclude the target key may potentially be at the page of <span class="arithmatex">\(k_i\)</span> . Then we do binary search at the page of <span class="arithmatex">\(k_i\)</span> to find k</p>
+</blockquote>
+<p>Operation:</p>
+<ul>
+<li>insert:</li>
+</ul>
+<blockquote>
+<p>Binary search to find proper location, and then push rest of elements up by one slot</p>
+</blockquote>
+<ul>
+<li>searchSingleEntry</li>
+</ul>
+<blockquote>
+<p>we do binary search on the first key of each page to determine where is the data page. Then in that page, we do binary search to find the target key.</p>
+</blockquote>
+<ul>
+<li>
+<p>delete</p>
+</li>
+<li>
+<p>update:</p>
+</li>
+</ul>
+<p>Performance:</p>
+<table>
+<thead>
+<tr>
+<th>operation</th>
+<th>worst case CPU</th>
+<th>worst case I/O</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>insert/update</td>
+<td></td>
+<td>O(N/B)</td>
+</tr>
+<tr>
+<td>search</td>
+<td>O(<span class="arithmatex">\(log_2(N/B)\)</span>) + O(<span class="arithmatex">\(log_2(B)\)</span>)</td>
+<td>O(<span class="arithmatex">\(log_2(N/B)\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<p>Pro:</p>
+<ul>
+<li>searchSingleENtry is fast</li>
+</ul>
+<p>Con:</p>
+<ul>
+<li>limit: Can only sort based on one column, but what if we want to search across other columns</li>
+</ul>
+<h4 id="64-binary-tree">6.4 Binary tree</h4>
+<p>How is data stored and how search occurs:</p>
+<blockquote>
+<ol>
+<li>We first use an augmented binary tree to store each key of the column A of the table at each node of the tree. Each node stores the key and its associated page number of the table in storage</li>
+</ol>
+<p><img alt="image-20230926152925598" src="../csc443.assets/image-20230926152925598.png" /></p>
+<ol>
+<li>We store each tree node in an array of tree nodes. The array needs to be written to the store. The content of the array may be in different page number of the sorage. Inside each element of the array, each element stores the key value, its associated data page number, its left child &amp; the left child's page(since each element of the array may be in different page of the storage), its right child &amp; the right child's page number. Now suppose each element of the tree array is in different page number and when we do tree traversal, we need to read <span class="arithmatex">\(log_2(N)\)</span> pages because the first page of the array can store B nodes from top level to below. Thus, we have fewer pages to read, which is <span class="arithmatex">\(log_2(B)\)</span>. Therefore, the total I/O cost is <span class="arithmatex">\(log_2(N) - log_2(B) = log_2(N/B)\)</span> </li>
+</ol>
+</blockquote>
+<p>Operation:</p>
+<ul>
+<li>insert:</li>
+<li>searchSingleEntry</li>
+<li>delete</li>
+<li>update:</li>
+</ul>
+<p>Performance:</p>
+<table>
+<thead>
+<tr>
+<th>operation</th>
+<th>worst case CPU</th>
+<th>worst case I/O</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search</td>
+<td>O(<span class="arithmatex">\(log_2(N)\)</span>)</td>
+<td>O(<span class="arithmatex">\(log_2(N/B)\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="65-hash-table">6.5 Hash table</h4>
+<ul>
+<li>
+<p>We store a hash table in storage</p>
+</li>
+<li>
+<p>We use hash function to map key to a bucket and each bucket contains B entries mapping a key to its data page(hash collision policy)</p>
+</li>
+<li>We double number of buckets when hash table reaches capacity</li>
+</ul>
+<p>read/write cost:</p>
+<ul>
+<li>O(1) per random query and no collision happens</li>
+<li>collision happens</li>
+<li>double expand hashtable:</li>
+</ul>
+<p>downside:</p>
+<ul>
+<li>No support for range reads</li>
+<li>Expansion leads to performance slumps</li>
+<li>We waste 50% of capacity right after expansion</li>
+</ul>
+<h4 id="66-extendible-hashing">6.6 Extendible hashing</h4>
+<p>how it works:</p>
+<ol>
+<li>we first have a small directory that comrises of small hash prefix to the data pages</li>
+<li>When we create data, we hash the data using the small directory. When collision happens, say we use chaining and we create one overflowing page</li>
+<li>We can then double directory to allow more mapping to data pages and finally we copy the overflowing page to the new data page from the doubled directory. </li>
+</ol>
+<h4 id="67-b-tree">6.7 B-tree</h4>
+<p>Goal: </p>
+<blockquote>
+<p>we want to read at least B entries from storage at a time, let’s make each tree node have B entries to prune the search space by a factor of B</p>
+</blockquote>
+<p>defn of B-tree:</p>
+<blockquote>
+<p>A B-tree T is a rooted tree(whose root is T.root) that has following property:</p>
+<ol>
+<li>Each node x has the following attributes:</li>
+<li>x.n, the number of keys in node x</li>
+<li>the (x.n) keys in the list: x.key<sub>1</sub>, x.key<sub>2</sub>, ... x.key<sub>x.n</sub>,  stored in non-decreasing order</li>
+<li>x.leaf, boolean value to indicate whether this node is leaf</li>
+<li>Each internal node x has (x.n + 1) children node</li>
+<li>Say x.c<sub>i</sub> is the pointer to the i<sup>th</sup> child node of node x. If k<sub>i</sub> is any key stored in the subtree with root x.c<sub>i</sub>, then k<sub>1</sub> <span class="arithmatex">\(\leq\)</span> x.key<sub>1</sub> <span class="arithmatex">\(\leq\)</span> k<sub>2</sub>  <span class="arithmatex">\(\leq\)</span>  x.key<sub>2</sub> <span class="arithmatex">\(\leq\)</span> ... <span class="arithmatex">\(\leq\)</span> k.key<sub>x.n</sub> <span class="arithmatex">\(\leq\)</span> k<sub>x.n+1</sub>  </li>
+<li>All leaves have the same depth  h</li>
+<li>let <span class="arithmatex">\(t \geq 2\)</span> be the min degree of B-tree</li>
+<li>Every node other than root has at least (t - 1) keys, at least t children pointer</li>
+<li>Every node contains at most (2t - 1) keys, at most 2t children pointer</li>
+</ol>
+</blockquote>
+<p>Notation:</p>
+<ul>
+<li>we use B= 2t-1 to represent the number of keys in a full leaf node in B-tree. Each leaf occupies a whole page size on the disk as default</li>
+</ul>
+<p><strong>Example of structuring B - tree</strong>:</p>
+<p><img alt="image-20230926161938839" src="../csc443.assets/image-20230926161938839.png" /></p>
+<ol>
+<li>Suppose we have a list of keys and we sort them. We group of the keys with each group size of 3. Each group is the tree node of B-tree. In the leaf node, there stores the mapping from the key to the page number in the diagram above</li>
+<li>In the upper level, we store the max key of each node. In the left upper node, we store 7, 22 as the max key of the left 2 leaf node. In the right, we store the max key of the right 3 leaf nodes which are 35, 73, 90</li>
+<li>The root node stores 31 which is the max key of the 3rd leaf node</li>
+</ol>
+<p><strong>cost:</strong></p>
+<p>let N be the number of keys in total, B be the max number of keys in a b-tree node:</p>
+<ul>
+<li>
+<p>depth of b-tree: <span class="arithmatex">\(log_B(N)\)</span> ,</p>
+</li>
+<li>
+<p>search cost(I/O cost): O(<span class="arithmatex">\(log_B(N)\)</span>)</p>
+</li>
+<li>
+<p>CPU cost: O(<span class="arithmatex">\(log_B(N) * log_2B\)</span>): we searched log_b(B) and for each node, we searched among the B keys </p>
+</li>
+</ul>
+<p><strong>how to insert(To be filled):</strong></p>
+<blockquote>
+<ol>
+<li>find target node</li>
+<li>if node is full(node key # == B):</li>
+<li>split target node into 2 new half-full nodes</li>
+<li>add key sto the new node</li>
+<li>compare the new key with its parent node keys and propagate split upward potentially</li>
+</ol>
+</blockquote>
+<h2 id="week-5">Week 5</h2>
+<h3 id="7-lsm-tree">7. LSM tree</h3>
+<p>type:</p>
+<ul>
+<li>Leveled LSM-tree</li>
+<li>Basic LSM-tree</li>
+<li>Tiered LSM-tree</li>
+</ul>
+<h4 id="71-basic-lsm-tree">7.1 Basic LSM tree</h4>
+<p><img alt="image-20231003155236002" src="../csc443.assets/image-20231003155236002.png" /></p>
+<p>Insert:</p>
+<ol>
+<li>insert data at the buffer at level 0. Once filled, we sort the key at buffer &amp; flush buffer and place buffer at level 1</li>
+<li>We then insert data at buffer at level 0. Once buffer at level 0 filled up. We mergesort the old buffer at level 1 and current filled buffer at level 1, then place the new sorted buffer at level 2. </li>
+<li>We delete buffer at level 0 and level 1. </li>
+<li>We repreated this until level N</li>
+</ol>
+<p>Get:(total runTime: O(log2 N/P) * O(log2 N/B))</p>
+<ol>
+<li>searches the LSM-tree from smaller to larger levels  (O(log2 N/P), P is the length of SST at each level)</li>
+<li>search each level                                                              (O(log2 N/B), the Nth level SST length is log2(N/B))</li>
+<li>stop when they find the first matching entry</li>
+</ol>
+<p>Scan: Return most recent version of each entry in the range across entire tree</p>
+<p>(O(log2(N/B) * logB(N) + S/B))</p>
+<blockquote>
+<ol>
+<li>Allocate an in-memory buffer (&gt;1 page) for each level</li>
+<li>Search for start of key range at each level </li>
+<li>Initialize counter to smallest key in range</li>
+<li>Loop:</li>
+<li>Bring youngest matching entry to output </li>
+<li>Increment counter</li>
+</ol>
+</blockquote>
+<p>Since there are copies during compaction of write:</p>
+<ul>
+<li>number of times each entry is copied: O(log2 N/B)</li>
+<li>price of each copy: O(1/B) reads &amp; writes</li>
+<li>total cost: O((log2 N/B)/B) read &amp; write I/Os</li>
+</ul>
+<h4 id="72-leveled-lsm-tree">7.2 Leveled LSM tree</h4>
+<p>Different from basic LSM tree, the ratio between length of level(n+1) and level n is T instead of 2</p>
+<p>Performance:</p>
+<ul>
+<li>Lookup cost(O(<span class="arithmatex">\(log_T(N/P)\)</span>))</li>
+<li>Insert cost: O(T/B * <span class="arithmatex">\(log_T(N/P)\)</span>)</li>
+</ul>
+<h4 id="73-tier-lsm-tree">7.3 Tier LSM tree</h4>
+<p>Performance:</p>
+<ul>
+<li>lookup cost: O(T * <span class="arithmatex">\(log_T(N/P)\)</span>)</li>
+<li>insert cost: O(1/B * <span class="arithmatex">\(log_T(N/P)\)</span>)</li>
+</ul>
+<h2 id="week-6">Week 6</h2>
+<p>Recall:</p>
+<blockquote>
+<p>B-tree random write leads to large write aplication. Thus, we use LSM tree</p>
+</blockquote>
+<p>level of LSM tree:</p>
+<p><span class="arithmatex">\(L = log_T(N/P)\)</span> , N is the number of entries, P is the size of memtable, T is the resize ratio</p>
+<h3 id="8-bloom-filter">8. Bloom filter</h3>
+<blockquote>
+<p>Probility tool to tell whether the key is in the set. It's a bit vector with k hash functions.</p>
+<p>operation:</p>
+<ul>
+<li>insert: hash the key and outcome is the index in the bitmap. We then set the bit on that index to be 1.</li>
+<li>query: If all bits are set to 1, it tells the key is probably in the set. If there exists bit that is 0, it tells the key is not in the set</li>
+</ul>
+<p>However, there's a small probability of false positives, where the Bloom filter incorrectly suggests that an element is in the set when it's not. There are no false negatives; if the filter says the element is not in the set, it's definitely not.</p>
+<ul>
+<li>
+<p>true positive: check if all bits are 1</p>
+</li>
+<li>
+<p>true negative: check if there exists bit that is 0</p>
+</li>
+<li>
+<p>false positive： bloom filter tells it is in but it is not in</p>
+</li>
+<li>
+<p>false negative: bloom filter tells it is not in but it is in</p>
+</li>
+</ul>
+<p>if it is in , then bloom filter returns positive</p>
+</blockquote>
+<p>Key problem:</p>
+<ul>
+<li>how many hash functions to use?</li>
+<li>how to choose K</li>
+<li>Operation cost</li>
+</ul>
+<h4 id="81-how-many-hash-functions-to-use">8.1 how many hash functions to use:</h4>
+<blockquote>
+<p>too few hash functions lead to high false positive rate. But too many hash functions wind up increasing the FP</p>
+<p><img alt="image-20231010153912390" src="../csc443.assets/image-20231010153912390.png" /></p>
+<p>Suppose insert N keys in bloom filter, we have bloom filter with K bits in length,</p>
+<p>M = K / N(K &gt; N), how to choose K?</p>
+<p>Optimal # hash functions = ln(2) · M(M is the number of bits per entry, typically 10)</p>
+<p>assuming the optimal # hash functions, 2<sup>−M⋅ln(2)</sup> false positive rate</p>
+<p>In reality, we first have ideal false positive rate, then we deduct M, then we deduct Optimal # hash functions </p>
+</blockquote>
+<h4 id="82-operation-cost">8.2 Operation cost</h4>
+<table>
+<thead>
+<tr>
+<th>operation</th>
+<th>cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Insert</td>
+<td>M * In(2)</td>
+</tr>
+<tr>
+<td>Positive query</td>
+<td>M * ln(2)</td>
+</tr>
+<tr>
+<td>Avg. Negative Query</td>
+<td>2</td>
+</tr>
+<tr>
+<td>false positive rate</td>
+<td><span class="arithmatex">\(2^{−M⋅ln(2)}\)</span></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Cost for bloom filter searching key in LSM - tree:</p>
+<ul>
+<li>worste case: O(M  * L)</li>
+<li>Avg worst case: O(M + L)</li>
+</ul>
+<h3 id="9-monkey">9. Monkey</h3>
+<h3 id="10-dstoeskv">10. DSTOESKV</h3>
+<p>design:</p>
+<blockquote>
+<p>At higher level, we use tier LSM tree mechanism. At the last level, we use level LSM tree mechanism.</p>
+</blockquote>
+<p>reads co</p>
+<h2 id="week-7">Week 7</h2>
+<h3 id="quick-sort">Quick sort</h3>
+<p>benefit:</p>
+<ul>
+<li>In-place algorithm: no need for x2 space like merge-sort</li>
+<li>Sequential memory access is fast</li>
+</ul>
+<h3 id="b-tree-sort">B-tree sort</h3>
+<ul>
+<li>If internal nodes are in memory: O(N) reads &amp; writes</li>
+<li>If internal nodes are in storage:  O(N logB N) reads &amp; O(N) writes</li>
+</ul>
+<h3 id="multi-way-merge-sort">Multi-way Merge-Sort</h3>
+<ol>
+<li>Sequentially read chunks that fit in memory, sort, and store back as temporary files</li>
+<li>Allocate a buffer for each input file and merge into output stream</li>
+</ol>
+<p><img alt="image-20231017153238109" src="../csc443.assets/image-20231017153238109.png" /></p>
+<p>limit:</p>
+<ul>
+<li>
+<p>lots of write amplications</p>
+</li>
+<li>
+<p>each sorted temporary file double the storage</p>
+</li>
+<li>
+<p>We have little memory as a buffer to store all of the sorted file. Thus, we merge at least 2 at a time</p>
+</li>
+</ul>
+<h2 id="midterm-review">Midterm review</h2>
+<h3 id="1-b-tree">1. B-tree</h3>
+<h3 id="2-lsm-tree">2. LSM tree</h3>
+<h3 id="summary">*. Summary</h3>
+<p>Notation:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Description</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>Total number of entries</td>
+<td>entries</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Number of levels</td>
+<td>levels</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Number of (key, value) entries that fit into a disk page</td>
+<td>entries</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Number of (key, pointer) entries that fit into a disk page</td>
+<td>entries</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Size of an entry</td>
+<td>bits</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Size of the buffer in disk pages</td>
+<td>pages</td>
+</tr>
+<tr>
+<td>P<sub>1</sub></td>
+<td>number of entries in a buffer, P<sub>1</sub> = P * B</td>
+<td>entries</td>
+</tr>
+<tr>
+<td>S</td>
+<td>number of entries in range scan</td>
+<td>entries</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Size ratio between adjacent levels</td>
+<td></td>
+</tr>
+<tr>
+<td>T<sub>lim</sub></td>
+<td>Size ratio value at which point L converges to 1</td>
+<td></td>
+</tr>
+<tr>
+<td>M</td>
+<td>Total amount of main memory in system</td>
+<td>bit</td>
+</tr>
+<tr>
+<td>M<sub>buffers</sub></td>
+<td>Main memory allocated to the buffer</td>
+<td>bit</td>
+</tr>
+<tr>
+<td>M<sub>filters</sub></td>
+<td>Main memory allocated to the Bloom filters</td>
+<td>bit</td>
+</tr>
+<tr>
+<td>M<sub>pointers</sub></td>
+<td>Main memory allocated to the fence pointers</td>
+<td>bit</td>
+</tr>
+</tbody>
+</table>
+<p>RunTime summary:</p>
+<table>
+<thead>
+<tr>
+<th>data structure</th>
+<th>insert</th>
+<th>update</th>
+<th>search</th>
+<th>scan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B+tree(in storage, unclustered)</td>
+<td>I/O: O(log<sub>B</sub>N) +O(1)<br/></td>
+<td></td>
+<td>I/O: O(log<sub>B</sub>N)<br/>CPU: O(log<sub>B</sub>N * log<sub>2</sub>B) = O(log<sub>2</sub>N)</td>
+<td>I/O: O(log<sub>B</sub>N + S)</td>
+</tr>
+<tr>
+<td>B+tree(internal in memory)</td>
+<td>I/O: O(1) + O(1) + GC<br/></td>
+<td></td>
+<td>I/O: O(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>B+tree(clustered)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>I/O: O(log<sub>B</sub>N + S/B)</td>
+</tr>
+<tr>
+<td>basicLSM tree(without B-tree)</td>
+<td></td>
+<td></td>
+<td>I/O: O(log2(N/P<sub>1</sub>) * log2(N/B))</td>
+<td></td>
+</tr>
+<tr>
+<td>basic LSM(with B-tree in storage)</td>
+<td>I/O: <br/>O(log<sub>2</sub>N/P<sub>1</sub> * 1/B)</td>
+<td></td>
+<td>I/O: O(log2(N/P<sub>1</sub>) * logB(N))</td>
+<td>I/O: O(log2(N/P) * logB(N) + S/B)</td>
+</tr>
+<tr>
+<td>clustered basic LSM(with B-tree in memory)</td>
+<td></td>
+<td></td>
+<td>I/O: O(log2(N/P<sub>1</sub>) )</td>
+<td></td>
+</tr>
+<tr>
+<td>unclustered basic LSM(with B-tree in memory)</td>
+<td>I/O: O(1/B + L<sub>U</sub>/K)</td>
+<td></td>
+<td>I/O: L<sub>U</sub> + 1</td>
+<td>I/O: O(L<sub>U</sub> + S)</td>
+</tr>
+<tr>
+<td>level LSM tree</td>
+<td>I/O: O(T/B logT (N/P))</td>
+<td></td>
+<td>I/O: O(logT(N/P))</td>
+<td></td>
+</tr>
+<tr>
+<td>tier lsm tree</td>
+<td>I/O: O(1/B logT (N/P))</td>
+<td></td>
+<td>I/O: O(T* logT(N/P))</td>
+<td></td>
+</tr>
+<tr>
+<td>Append only table</td>
+<td>I/O: O(1/B)</td>
+<td></td>
+<td>I/O: O(N/B)</td>
+<td></td>
+</tr>
+<tr>
+<td>sorted table</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>zone map</td>
+<td></td>
+<td></td>
+<td>I/O: O(N/B) (worst) <br/></td>
+<td></td>
+</tr>
+<tr>
+<td>sorted file</td>
+<td>I/O: O(N/B)</td>
+<td></td>
+<td>I/O: O(log<sub>2</sub>(N/B))(worst) <br/>CPU: O(log<sub>2</sub>(N/B) + log<sub>2</sub>B) = O(log<sub>2</sub>N)</td>
+<td></td>
+</tr>
+<tr>
+<td>binary tree</td>
+<td></td>
+<td></td>
+<td>I/O: O(log<sub>2</sub>(N/B))<br/>CPU: O(log<sub>2</sub>(N))</td>
+<td></td>
+</tr>
+<tr>
+<td>hashtable(in storage)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>I/O runtime: (L = log<sub>T</sub>(N/P<sub>1</sub>) )</p>
+<table>
+<thead>
+<tr>
+<th>data structure</th>
+<th>operation</th>
+<th>I/O</th>
+<th>Runtime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>append-only table</td>
+<td>query</td>
+<td>read</td>
+<td>O(N/B)</td>
+</tr>
+<tr>
+<td></td>
+<td>insert</td>
+<td>read</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>write</td>
+<td>O(1/B)</td>
+</tr>
+<tr>
+<td>Basic LSM(with B-tree not in memory)</td>
+<td>query</td>
+<td>read</td>
+<td>O(log<sub>2</sub>(N/P<sub>1</sub>) *log<sub>B</sub>(N))</td>
+</tr>
+<tr>
+<td></td>
+<td>insert</td>
+<td>read</td>
+<td>O(log<sub>2</sub>(N/P<sub>1</sub>) * 1/B)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>write</td>
+<td>O(log<sub>2</sub>(N/P<sub>1</sub>) * 1/B)</td>
+</tr>
+<tr>
+<td>Basic LSM(with B-tree in memory)</td>
+<td>query</td>
+<td>read</td>
+<td>O(log<sub>2</sub> (N/P<sub>1</sub>))</td>
+</tr>
+<tr>
+<td></td>
+<td>insert</td>
+<td>read</td>
+<td>O(log<sub>2</sub>(N/P<sub>1</sub>) * 1/B)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>write</td>
+<td>O(log<sub>2</sub>(N/P<sub>1</sub>) * 1/B)</td>
+</tr>
+<tr>
+<td>B-tree(not in memory)</td>
+<td>query</td>
+<td>read</td>
+<td>O(log<sub>B</sub>N)</td>
+</tr>
+<tr>
+<td></td>
+<td>insert</td>
+<td>read</td>
+<td>O(log<sub>B</sub>N)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>write</td>
+<td>O(1) + GC</td>
+</tr>
+<tr>
+<td>B-tree(in memory)</td>
+<td>query</td>
+<td>read</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td></td>
+<td>insert</td>
+<td>read</td>
+<td>O(1)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>write</td>
+<td>O(1) + GC</td>
+</tr>
+<tr>
+<td>Level LSM</td>
+<td>query</td>
+<td>read</td>
+<td>O(log<sub>T</sub>(N/P<sub>1</sub>))</td>
+</tr>
+<tr>
+<td></td>
+<td>insert</td>
+<td>read</td>
+<td>O(log<sub>T</sub>(N/P<sub>1</sub>) * T * 1/B)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>write</td>
+<td>O(log<sub>T</sub>(N/P<sub>1</sub>) * T * 1/B)</td>
+</tr>
+<tr>
+<td>Tier LSM</td>
+<td>query</td>
+<td>read</td>
+<td>O(O(log<sub>T</sub>(N/P<sub>1</sub>) * T )</td>
+</tr>
+<tr>
+<td></td>
+<td>insert</td>
+<td>read</td>
+<td>O(log<sub>T</sub>(N/P<sub>1</sub>) * 1/B)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>write</td>
+<td>O(log<sub>T</sub>(N/P<sub>1</sub>) * 1/B)</td>
+</tr>
+<tr>
+<td>LSM with bloom filter uniform FPR <br/>across each level</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Monkey</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Dotevski</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>B-tree:</p>
+<ul>
+<li>clustered vs unclustered</li>
+<li>cluster height: log<sub>K</sub>(N / K), number of leaf node: N/K</li>
+<li>
+<p>unclustered height: log<sub>B</sub>(N/B), number of leaves: N/B</p>
+</li>
+<li>
+<p>internal node in buffer:</p>
+</li>
+<li>in buffer</li>
+<li>
+<p>in storage</p>
+</li>
+<li>
+<p>Each insert costs 1 read and 1 write I/O(because of split node) and each get costs 1 I/O</p>
+</li>
+<li>in storage:</li>
+<li>insert/search/update:   O(log<sub>B</sub>N) Read I/O  + O(1) Write I/O</li>
+<li>internal node in memory buffer:</li>
+<li>O(N/B) keys are stored in memory</li>
+</ul>
+<p>lsm tree:</p>
+<ul>
+<li>height: L = <span class="arithmatex">\(\lceil log_T(\frac{NE}{M_{buffer}} \cdot \frac{T-1}{T}) \rceil\)</span> = O(log<sub>T</sub> N/P<sub>1</sub>), T<sub>lim</sub> = <span class="arithmatex">\(\frac{NE}{M_{buffer}}\)</span>= N/P<sub>1</sub> </li>
+<li>Each insert costs 1/B read and 1/B write I/O and each get costs 1 I/O.</li>
+<li>operation worst case</li>
+<li>
+<p>get: find a key that does not exist in memtable and sst files(in this way, the )</p>
+</li>
+<li>
+<p>each file has B-tree</p>
+</li>
+<li>yes<ul>
+<li>B-tree in memory</li>
+<li>B-tree is not in memory</li>
+</ul>
+</li>
+<li>no</li>
+<li>merge policy:</li>
+<li>tier:<ul>
+<li>With tiering there are at most T − 1 runs at every level (when the T th run arrives from the previous level it triggers a merge operation and a push to the next level)</li>
+</ul>
+</li>
+<li>
+<p>level</p>
+</li>
+<li>
+<p>clustered vs unclustered</p>
+</li>
+</ul>
+<p>Bloom filter:</p>
+<ul>
+<li>Let M be the number of bits per entry(common M value is 10, which gives 1 false positive rate)</li>
+<li>optimal #of hash func: ln(2) * M</li>
+<li>false positive rate: 2<sup>-M*ln(2)</sup></li>
+<li>Operation cost(in memory):</li>
+<li>Insertion: each insertion takes M * ln(2)</li>
+<li>postive query: M * ln(2)</li>
+<li>Avg negative query: 1 + 1/2 + 1/4 + ... = 2</li>
+<li>get cost:<ul>
+<li>total worst case: O(M * L)  (the key is not in LSM tree and we get false positive query all the way to the L level of the tree)</li>
+<li>Avg worst case: O(M + L)</li>
+</ul>
+</li>
+<li>LSM tree integrated with bloom filter I/O cost:</li>
+<li>tier:<ul>
+<li>get: O(2<sup>-M</sup> * L * T)</li>
+</ul>
+</li>
+<li>level:<ul>
+<li>get: O(2<sup>-M</sup> * L)</li>
+</ul>
+</li>
+</ul>
+<p>space amplication:</p>
+<blockquote>
+<p>let <em>unq</em> be the number of unique entries,</p>
+<p>SA = <span class="arithmatex">\(\frac{N}{unq} - 1\)</span></p>
+<p>worst case SA:</p>
+<ul>
+<li>leveling:  With leveling, the worst-case space-amplification occurs when entries at Levels 1 to L − 1 are all updates to different entries at Level L thereby rendering at most a fraction of 1 T entries at level L obsolete. O(<span class="arithmatex">\(\frac{1}{T}\)</span>)</li>
+<li>tiering:  the worst-case occurs when entries at Levels 1 to L − 1 are all updates to different entries at Level L, and where every run at Level L contains the same set of entries (O(T))</li>
+</ul>
+</blockquote>
+<p>Monkey design:</p>
+<ul>
+<li>how does Monkey allocate memory optimally across Bloom filters to minimize lookup cost?</li>
+</ul>
+<blockquote>
+<p>monkey  finds the optimal number of levels Lfiltered to which Bloom filters should be allocated and lets the optimal FPR at Level i is T times higher than the optimal FPR at Level i − 1. Thus, the lower level of lsm tree in monkey has more bits per entry in bloom filter and the deeper level has fewer bits till in some levels there is no bit. The intuition is that the amount of main memory needed for achieving a low FPR at deeper levels is significantly higher since they have exponentially more entries and the worst case runtime of false positive query is O(ML) and the average worst case is O(M + L), where M is the number of bits per entry and L is the number of levels in lsm tree.</p>
+</blockquote>
+<ul>
+<li>
+<p>bloom filter worst case: O(M * L + L<sup>2</sup>), Avg worst case: O(M + L)</p>
+</li>
+<li>
+<p>I/O cost with monkey design:</p>
+</li>
+<li>
+<p>level:</p>
+<ul>
+<li>(2<sup>-M</sup> /T<sup>L-1</sup> +... +2<sup>-M</sup> / T<sup>2</sup> + 2<sup>-M</sup>/ T + 2<sup>-M</sup> /T<sup>0</sup>  +) = O(2<sup>-M</sup>), while get i/o cost for regular design is </li>
+</ul>
+<p>O(2<sup>-M</sup> * L)</p>
+</li>
+</ul>
+<p>Dostoevski:</p>
+<ul>
+<li>What is lazy leveling:</li>
+</ul>
+<blockquote>
+<p>: it applies leveling at the largest level and tiering at all other levels. As a result, the number of runs at the largest level is 1 and the number of runs at all other levels is at most T − 1 </p>
+</blockquote>
+<ul>
+<li>trade-off:</li>
+</ul>
+<blockquote>
+<p>improves the cost complexity of updates, (2) maintains the same complexity for point lookups, long range lookups, and space-amplification, and, even though it trades off the point lookup (3) provides competitive performance for short range lookups</p>
+</blockquote>
+<ul>
+<li>
+<p>I/O cost:</p>
+</li>
+<li>
+<p>get: O(2<sup>-M</sup>)</p>
+</li>
+<li>insert: O(1/B) + ... + O(1/B) + O(T/B) = O((L+T)/B)</li>
+</ul>
+<p>multi-way merge sort algorithm:</p>
+<table>
+<thead>
+<tr>
+<th>Notation</th>
+<th>description</th>
+<th>units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>number of entries in buffer</td>
+<td>entries</td>
+</tr>
+</tbody>
+</table>
+<p>Let buffer size be M entries, data size be N entries, each page contains B entries. The algorithm uses the buffer to sort the data entries:</p>
+<blockquote>
+<p>step1: partition the N entries into (N/M) partitions with each partition's size M entries</p>
+<p>step2: Use the buffer to sort each partition so that each partition is sorted(sort each partition needs O(Mlog<sub>2</sub>M) and (N/M) partitions in total takes O(Nlog<sub>2</sub>M))</p>
+<p>step3: Since we have buffer size M entries and we have M/B buffer, then we select M/B partition from the N/M partitions and assign one buffer from the M/B buffer to each of the selected partition. For each partition, we copy one page from the partition to their corresponding buffer. Since each buffer contains the sorted page from the sorted partition, we choose the minimum element from the first key of each of the buffer, put it in the array which will be the merged partition of these partitions, and pop the key. The second key of that buffer will be compared with the rest of the buffer's first key. This process continues until there is no key in one of the buffer. Then we read the next page from the corresponding partition of that buffer. This continues until all partitions are read and we obtain this merged partition called P1</p>
+<p>step4:  We then select the next M/B partions from the N/M partition for the second pass and does the same process as step 3 and obtain another mered partition called P2</p>
+<p>step5: After some passes, we now select M/B partition from those merged partition and does the same process as step3 until there is only 1 merged partition. This takes log<sub>M/B</sub>(N/M) passes</p>
+</blockquote>
+<ul>
+<li>
+<h1 id="iterations">iterations:</h1>
+</li>
+</ul>
+<p>log<sub>M/B</sub>(N/M) + 1 = log<sub>M/B</sub>(N/B),   precisely <span class="arithmatex">\(log_{M/B-1}(N/M) + 1\)</span></p>
+<p>(if we cannot allocate a buffer for each of the (N/M) partition, then this is the number of passes to merge N/M partitions into one and each pass we merge M/B partitions)</p>
+<ul>
+<li>
+<p>M = <span class="arithmatex">\(\sqrt {N \cdot B}\)</span> (number of entries in buffer if we can allocate one buffer for each (N/M) partition and the number of pass is 1)</p>
+</li>
+<li>
+<p>Given the above M, we have <span class="arithmatex">\(\sqrt{\frac{N}{B}}\)</span> partitions</p>
+</li>
+<li>
+<p>CPU &amp; I/O cost:</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>CPU cost</th>
+<th>I/O cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multi-way merge sort</td>
+<td>O(N <span class="arithmatex">\(\cdot\)</span> log<sub>2</sub>N)</td>
+<td>O(N/B * log<sub>M/B</sub>(N/B))</td>
+</tr>
+<tr>
+<td>(partition)</td>
+<td>O(M <span class="arithmatex">\(\cdot\)</span> log<sub>2</sub>M * N/M) = O(N<span class="arithmatex">\(\cdot\)</span> log<sub>2</sub>M)</td>
+<td>O(N/B)</td>
+</tr>
+<tr>
+<td>(merging: traverse buffer)</td>
+<td>O(<span class="arithmatex">\(\sqrt{\frac{N}{B}} \cdot N\)</span>)</td>
+<td>N/B * <span class="arithmatex">\(\lceil log_{M/B} (N/M) \rceil\)</span></td>
+</tr>
+<tr>
+<td>(merging: min heap)</td>
+<td>O(<span class="arithmatex">\(log_2(\sqrt {\frac{N}{B}} \cdot N)\)</span>)</td>
+<td>N/B * <span class="arithmatex">\(\lceil log_{M/B} (N/M) \rceil\)</span></td>
+</tr>
+<tr>
+<td>2-pass merge sort(given M = <span class="arithmatex">\(\sqrt{N \cdot B}\)</span>)</td>
+<td>O(N<span class="arithmatex">\(\cdot\)</span> log<sub>2</sub>M)</td>
+<td>O(N/B)</td>
+</tr>
+</tbody>
+</table>
+<p>Buffer pool:</p>
+<ul>
+<li>random eviction:</li>
+<li>Evict whichever page collides in the hash table with a new page</li>
+<li>pro: Simple, CPU-efficient, no extra metadata</li>
+<li>limit: May evict a frequently used page</li>
+<li>FIFO:</li>
+<li>steps:<ol>
+<li>Use a queue to maintain the order of the page that is inserted</li>
+<li>If a page is inserted, we add to the rear of the queue; if we want to evict, we pop the head</li>
+</ol>
+</li>
+<li>limit: Unlike the random policy, pages we evict now have different frames than pages we insert. We then need hash collision resolution algo and extra capcity</li>
+<li>LRU:</li>
+<li>steps(Evict page that was used last the longest time ago)<ol>
+<li>Use a queue to maintain the order of the page that is inserted</li>
+<li>when we insert a page, we add to the rear</li>
+<li>when we evict a page, we pop the head</li>
+<li>when we access a page, we move the page from its location in queue to rear</li>
+</ol>
+</li>
+<li>limit: CPU overhead</li>
+</ul>
+<p>trade-off:</p>
+<ul>
+<li>get query</li>
+<li>scan</li>
+<li>insert</li>
+<li>memory cost</li>
+</ul>
+<p>log rules:</p>
+<ul>
+<li>log<sub>a</sub>(b) = <span class="arithmatex">\(\frac{log_c(b)}{log_c(a)}\)</span></li>
+<li>log<sub>a</sub>b * log<sub>c</sub> a = log<sub>c</sub> b</li>
+</ul>
+<h2 id="week-9">Week 9</h2>
+<h3 id="1-circular-log">1. Circular log</h3>
+<p>also known as "Index+Log", "Circular Log", "log-structured hash table", "log structured file system"</p>
+<p><strong>Components:</strong></p>
+<ul>
+<li>buffer: an in-memory buffer used to buffer insertion and then flush to the disk</li>
+<li>Index: an in-memory hashtable that maps the key to the location in log(storage). Inside the index, the data is of the form <key, blockId></li>
+<li>live bytes: an in-memory hashtable that maps the blockId to an integer counter that represents how many live bytes are in this block. The GC will use this data to determine which block to be recycle. The data inside live bytes is <blockId, counter></li>
+<li>Log: consists a set of blocks(where block size &gt;= buffer size) on the disk. Inside each block, the data is of the form <key, value></li>
+</ul>
+<p><strong>Soln 1:</strong></p>
+<ul>
+<li>
+<p>insert:</p>
+</li>
+<li>
+<p>insert the <key, value> into the buffer</p>
+</li>
+<li>
+<p>if the buffer is full:</p>
+<ol>
+<li>flush the buffer to the end of the log</li>
+<li>add all keys from the buffer to the index and set their values as the pointers to the end of the log</li>
+</ol>
+</li>
+<li>
+<p>delete(version 1):</p>
+</li>
+<li>
+<p>read the entry from log on disk through its blockId in index to check the value's size</p>
+</li>
+<li>subtract its size from the blockId's counter in live-bytes section</li>
+<li>
+<p>delete the <key, blockId> from the index. That's all. The actual <key, value> pair will be deleted in gc</p>
+</li>
+<li>
+<p>delete(version 2):</p>
+</li>
+<li>
+<p>In order to get rid of the read I/O from the delete version 1. We can store an extra value of size that represents the size of the value associated with the key in index as the following screenshot. Then we can retrieve its size by just looking through its key in index</p>
+<p><img alt="image-20231209202231414" src="../csc443.assets/image-20231209202231414.png" /></p>
+</li>
+<li>
+<p>same as version 1</p>
+</li>
+<li>
+<p>same as version 1</p>
+</li>
+<li>
+<p>get:</p>
+</li>
+<li>
+<p>Check if the buffer has the <key, value> pair</p>
+</li>
+<li>
+<p>if not, check the index for the block and read the data from the log through the block Id</p>
+</li>
+<li>
+<p>update:</p>
+</li>
+<li>
+<p>call delete</p>
+</li>
+<li>
+<p>call insert</p>
+</li>
+<li>
+<p>GC:</p>
+</li>
+<li>
+<p>Periodically check if the global threshold is reached(live data L /physical space P). If so, trigger the following steps for GC</p>
+</li>
+<li>
+<p>Pick the blockId with the least live data left from live-bytes section</p>
+</li>
+<li>
+<p>Read and scan the block through the blockId.</p>
+<p>For each key value pair entry in this block</p>
+<ol>
+<li>if the key is not in the hashtable in index section, it means the key is deleted and continue</li>
+<li>if the key is in index section but its blockId is not this blockId, continue</li>
+<li>if the key is in index section but its blockId is this blockId, migrate this key/value entry to the last block if the last block not full and update index blockId for these keys(O.W: just allocate a new block and point to the new block)</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-hotcold-separation">2. hot/cold separation</h3>
+<p>This is a problem</p>
+<blockquote>
+<p>We call the page entries that are frequently updated hot pages, while the page entries that are seldom updated cold pages. THE cold data gets mixed with more hot data within an erase unit. Since hot entries are invalidated quickly, by the time we garbage-collect, we only migrate cold data which does not actually need to be migrated and thus increase the WA. This may lead to the WA worst case</p>
+</blockquote>
+<p>The soln to the above problem can be separate cold and hot data into 2 different areas. Here is 2 implementations:</p>
+<p><strong>soln 2(hot and cold buffer):</strong></p>
+<ol>
+<li>Prepare 2 buffers. One is to buffer garbage collected data that is generally cold in cold buffer and the other is to buffer user updates(generally hot) in hot buffer</li>
+<li>Whenever the user updates or insert data, the data goes to the hot buffer. When the hot buffer is full, it flushes to a new block at the end of the log instead of the last unfull block.(In this system, every block will be full unlike the circular log in last section)</li>
+<li>Whenever the GC migrates cold data, it does not directly migrate to the last unfull block at the end of the log. It goes to the cold buffer. When the cold buffer is full, it flushes to a new block. Then in this case, hot block and cold block are separate from each other.</li>
+</ol>
+<p>write cost: O((1 + GC)/B)</p>
+<p><strong>soln 3(more advanced, use data structure "count-min" to separate data with different temperatures):</strong></p>
+<ol>
+<li>We prepare multiple buffers(more than 2). One is the really hot buffer that is used to buffer usr insert and the other are the buffers of different temperature  ranges indicated by count-min.</li>
+<li>Whenever we update key/value pair, we insert the blockId where the kv lies in to the count-min. Then we query the temperature of that block. We then put that kv into the buffer associated with that buffer</li>
+<li>
+<p>Whenever we perform GC, we query the temperature of that selected block and put it in the buffer associated with that temperature.</p>
+</li>
+<li>
+<p>count-min: a data structure that estimates freqency of elements in a data stream. Consists of d arrays of w counters. Each counter is an integer type.</p>
+</li>
+<li>
+<p>insert: when we insert an element, for each array of d arrays, we use a different hash function to get its position in each array and increment the counter at the hashed position in each array</p>
+</li>
+<li>
+<p>query: when we query an element's frequency, we hash it to each array and get the minimum counter of each array as the frequency.</p>
+</li>
+<li>
+<p>hyperparameter of count-min(w, d):</p>
+<ul>
+<li>
+<p>w = <span class="arithmatex">\(\lceil e / \epsilon \rceil\)</span></p>
+</li>
+<li>
+<p>d = <span class="arithmatex">\(\lceil ln (1 / \delta) \rceil\)</span></p>
+</li>
+</ul>
+<p><img alt="image-20231114121512072" src="../csc443.assets/image-20231114121512072.png" /></p>
+</li>
+<li>
+<p>decay(deal with situation past hot pages become cold at some time): every x insertion, we divide all counters by 2</p>
+</li>
+</ol>
+<p>write cost: O((1 + GC)/B)</p>
+<p>impact of hot/cold separation:</p>
+<blockquote>
+<p>let WA<sub>sep</sub> be the GC overhead employ hot/cold separation,</p>
+<p>then WA<sub>sep</sub> &lt;= 1 +<span class="arithmatex">\(\frac{L/P}{2 *(1 - L/P)}\)</span> &lt;= 1 +<span class="arithmatex">\(\frac{L/P}{(1 - L/P)}\)</span></p>
+</blockquote>
+<h3 id="3-checkpoint-recovery">3. Checkpoint recovery</h3>
+<p>Problem:</p>
+<blockquote>
+<p>When power is suddenly off, if we want to restore the data in index and live-bytes, we need to read all logs on storage from newest to oldest. However, this is very slow if we have many logs</p>
+</blockquote>
+<p><strong>Attemp4(Simple recovery algorithm):</strong></p>
+<p><strong>based on Sol 1, 2, or 3</strong></p>
+<ul>
+<li>
+<p>Recovery:</p>
+</li>
+<li>
+<p>scan the log from the most recent block to the oldest block</p>
+</li>
+<li>
+<p>For each block of the log:</p>
+<ol>
+<li>
+<p>add the block_id and the file size pair to the live-byte</p>
+</li>
+<li>
+<p>For each entry of the block:</p>
+<ol>
+<li>if the entry not in index:</li>
+<li>
+<p>add the entry's key and blockId pair to the index</p>
+</li>
+<li>
+<p>else:</p>
+</li>
+<li>subtract the entry's value size from the live-byte through blockId</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p>Problem:</p>
+<ul>
+<li>slow for large data</li>
+</ul>
+<p><strong>Soln 5(Checkpointing):</strong></p>
+<p><strong>based on soln 1, 2, or 3</strong></p>
+<ul>
+<li>
+<p>before crash:</p>
+</li>
+<li>
+<p>Every X updates/insertions, store copy of index &amp; live bytes.</p>
+</li>
+<li>
+<p>After crash/during recovery</p>
+</li>
+<li>
+<p>load all copies of index &amp; live-bytes</p>
+</li>
+<li>
+<p>scan X latestest block(Since the copy is the index before at most X insert/updates)</p>
+<p>For each block:</p>
+<ol>
+<li>For each entry in the block:<ol>
+<li>if the entry not in index:</li>
+<li>add the entry's key and blockId pair to the index</li>
+<li>else:</li>
+<li>subtract the entry's value size from the live-byte through blockId</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p>cost: </p>
+<ul>
+<li>
+<p>write: O(GC/B + index size / X)</p>
+</li>
+<li>
+<p>recovery: O(X/B) reads for backwards scan</p>
+</li>
+<li>get: O(1)</li>
+</ul>
+<p>Note:</p>
+<blockquote>
+<p>After we create the copy of index and insert/update M(M &lt; X) times, we may delete some key from index and the copy cannot reflect deleting in the old way. To achieve this, we add tombstone to the key  in buffer during delete operation and then remove from index. Then the log will reflect tombstone. When we scan the X logs during recovery, if the first instance of a key we see is a tombstone, we ignore all subsequent entries with this key.</p>
+</blockquote>
+<h3 id="4-cuckoo-filter">4. Cuckoo filter</h3>
+<p>Why do we need Cuckoo filter:</p>
+<blockquote>
+<p>The problem is that index size is quite big, Index size= N * (P + K) / <span class="arithmatex">\(\alpha\)</span></p>
+<ul>
+<li>N = data size</li>
+<li>K = each key size</li>
+<li><span class="arithmatex">\(\alpha\)</span>: collision resolution overheads(approximately 0.8)</li>
+</ul>
+</blockquote>
+<p>We can reduce K by adopting Cuckoo filter if we use Cuckoo filter to implement Index. The Cuckoo filter reduces space in memory by fixing an arbitrarily large,variable-length keys to be fixed size fingerprint</p>
+<p>Note:</p>
+<blockquote>
+<p>payload in slide: The payload can be any small fixed-length value you wish to associate with a fingerprint. In the case of circular logs, the payload is a pointer to the location of the entry in storage. </p>
+</blockquote>
+<p><strong>HyperParameters of Cuckoo filter:</strong></p>
+<ul>
+<li>M: bits length of each finger-print in Cuckoo filter bucket</li>
+<li><span class="arithmatex">\(\alpha\)</span>: fraction of occupied slots</li>
+<li><span class="arithmatex">\(\beta\)</span>: number of slots in bucket, the slide sets it to be 4</li>
+<li>N: the length of Cuckoo filter(i.e: number of buckets)</li>
+<li>h1(): primary hash function</li>
+<li>hash(): a function in alternate hash function h2(), h2() composites hash()</li>
+<li>h2(): h1(X) XOR hash(FP(X))</li>
+<li>FP(): finger-print function</li>
+</ul>
+<p>Invariant theory about Cuckoo filter:</p>
+<p><strong>Soln 6(Implementation with Cuckoo filter, based on soln 5):</strong></p>
+<ul>
+<li>
+<p>Initialize: initialize N buckets and each bucket can store <span class="arithmatex">\(\beta\)</span>(in slide, this is 4) pairs of <FP(X), blockId>. We prepare h1() function that maps key X to {1, 2, ... N} and h2() function to be <code>h1(X) XOR hash(FP(X))</code> </p>
+</li>
+<li>
+<p>insert(Y, V<sub>Y</sub>):</p>
+</li>
+<li>
+<p>add (Y, V<sub>Y</sub>) to the buffer/change the tombstone to V<sub>Y</sub></p>
+</li>
+<li>
+<p>If (the buffer is full):</p>
+<ol>
+<li>
+<p>flush all <key, value> to the disk location appointed by the buffer(may be temperature buffer)</p>
+</li>
+<li>
+<p>set the live-bytes data</p>
+</li>
+<li>
+<p>For each key <code>Y</code> that is not a tombstone in the buffer:</p>
+<ol>
+<li>
+<p><code>var flag = false</code></p>
+</li>
+<li>
+<p>if (primary bucket or alternative bucket contains FP that equals to <code>FP(Y)</code>):</p>
+</li>
+<li>
+<p>for each <code>FP</code> in primary bucket and alternative bucket that equals to <code>FP(Y)</code>:</p>
+<ol>
+<li>issue read to the <code>blockId</code></li>
+<li>if (key <code>Y</code> is in block pointed by <code>blockId</code>):
+        1. update <code>blockId</code> to point to the new <code>blockId</code>
+        2. set <code>flag</code> to true  // if flag is false, after this for loop, it means we have false positive</li>
+</ol>
+</li>
+<li>
+<p>if (!flag)    // false positive case or negative case, in total, key has never been inserted</p>
+</li>
+<li>
+<p>if (the bucket at<code>h1(FP(Y))</code> in index is empty): </p>
+<ol>
+<li>add <FP(Y), blockId> to the h1 bucket</li>
+</ol>
+</li>
+<li>else:<ol>
+<li>if (the bucket at alternative bucket of <code>FP(Y)</code> in index is empty)<ol>
+<li>add <FP(Y), blockId> to the alternative bucket</li>
+</ol>
+</li>
+<li>else:<ol>
+<li>evict a random fingerprint to its alternative bucket and do it recurisively</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>delete(Y):</p>
+</li>
+<li>
+<p>set variable <code>flag</code> to be false</p>
+</li>
+<li>
+<p>if (primary bucket or alternative bucket contains FP that equals to <code>FP(Y)</code>):</p>
+<ol>
+<li>
+<p>for each <code>FP</code> in primary bucket and alternative bucket that equals to <code>FP(Y)</code>:</p>
+<ol>
+<li>
+<p>issue read to the blockId</p>
+</li>
+<li>
+<p>if (key <code>Y</code> is in the block pointed by <code>blockId</code>):</p>
+</li>
+<li>
+<p>delete that mapping &lt;<code>FP</code>, <code>blockId</code>&gt; from cuckoo filter</p>
+</li>
+<li>
+<p>set <code>flag</code> to be <code>true</code> // we have this key in cuckoo filter </p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>if (flag)   // this means we find the key in cuckoo filter, otherwise, we do nothing</p>
+<ol>
+<li>write &lt;<code>Y</code>, tombstone&gt; to the buffer</li>
+</ol>
+</li>
+</ul>
+<p>​     </p>
+<ul>
+<li>
+<p>update:</p>
+</li>
+<li>
+<p>call delete()</p>
+</li>
+<li>call insert()</li>
+</ul>
+<p>cost:</p>
+<table>
+<thead>
+<tr>
+<th>updates/deletes</th>
+<th>O(1 + 2<sup>-M+3</sup>) read &amp; O(GC/B)writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>insert</td>
+<td>O(2<sup>-M+3</sup>) read &amp; O(GC/B) writes</td>
+</tr>
+<tr>
+<td>Gets</td>
+<td>O(1 + 2<sup>-M+3</sup>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="week-10">Week 10</h2>
+<h3 id="1-selection">1. Selection</h3>
+<p>Context: </p>
+<blockquote>
+<p>In one single table, we want to execute <code>SELECT * FROM table A WHERE X="i" and Y="j"</code>. Let     |<span class="arithmatex">\(X_i\)</span>|  and |<span class="arithmatex">\(Y_j\)</span>| denote the number of matching rows to X = i and Y = j. Let total number of rows in table A be n</p>
+</blockquote>
+<p>Here is  how select query is implemented:</p>
+<ul>
+<li>
+<p>algorithm 1:</p>
+</li>
+<li>
+<p>We store 2 unclustered index for the 2 columns for one table. In this case, the index leaf node stores the pointer to the real data (O(log<sub>B</sub>(N)))</p>
+</li>
+<li>Let Y<sub>j</sub> be the set of rowId that points to the table row and matches Y = j. Search index Y(say pick index Y) for the start of the result set Y<sub>j</sub> and scan the index leaf nodes for all pointers that are in Y<sub>j</sub></li>
+<li>For each pointer in Y<sub>j</sub>, we read the actual row from the table and check if its x column is j(This takes O(|Y<sub>j</sub>|))</li>
+</ul>
+<p>cost: logB(N) + |Yj| I/O</p>
+<ul>
+<li>algorithm 2:</li>
+<li>We store 2 unclustered index for the 2 columns for one table</li>
+<li>Let X<sub>i</sub>, Y<sub>j</sub> be the result set of rowId. search both indices for the start pointerof X<sub>i</sub>, Y<sub>j</sub> (O(2 * log<sub>B</sub> N)) and scan the leaf nodes for both indexes for all pointers that are in X<sub>i</sub> and Y<sub>j</sub> (O(|X<sub>i</sub>|/ B + |Y<sub>j</sub>| / B))</li>
+<li>For each shared rowId in X<sub>i</sub> and Y<sub>j</sub>, we look into the table for the desired column in table O(|Xi∩Yj|)</li>
+</ul>
+<p>​       Cost: 2 · logB(N) + |Xi|/B + |Yj|/B + |Xi∩Yj| I/O</p>
+<ul>
+<li>
+<p>algorithm 3(composite index):</p>
+</li>
+<li>
+<p>We store an unclustered B-tree that has the concatnate string of X and Y as the key of the index(similar to the format "x, y" as the key)</p>
+</li>
+<li>We search the composite index for key "i, j" to find the start pointer(O(log<sub>B</sub>(N)))</li>
+<li>We then scan the leaf node for all (key, rowId) of the composite index and add the rowIds to the set. For each rowId in the set, we look into the row of the table and this in total costs |Xi∩Yj|</li>
+</ul>
+<p>cost: log<sub>B</sub>(N) + |X<sub>i</sub> <span class="arithmatex">\(\cap\)</span> Y<sub>j</sub>| </p>
+<p>downside: Cannot handle queries just based on Y</p>
+<h3 id="2-projection">2. Projection</h3>
+<p>Select specific columns from the table</p>
+<h3 id="3-order-by">3. Order by</h3>
+<ul>
+<li>index</li>
+<li>external sorting</li>
+</ul>
+<h4 id="31-index">3.1 index</h4>
+<ul>
+<li>unclustered index: good for small input, but bad for large input because of random I/O</li>
+<li>clustered index: good for all cases</li>
+</ul>
+<h4 id="32-external-sort">3.2 external sort</h4>
+<p><img alt="image-20231207235200181" src="../csc443.assets/image-20231207235200181.png" /></p>
+<h3 id="4-distinct">4. Distinct</h3>
+<h4 id="41-sort">4.1 sort</h4>
+<ol>
+<li>Sort(through quick-sort, heap sort, external sort, index scan)</li>
+<li>eliminate adjacent identical items</li>
+</ol>
+<p>cost: O(Nlog<sub>2</sub>(N))</p>
+<h4 id="42-hash">4.2 Hash</h4>
+<ol>
+<li>Prepare a hashtable with the item as the key and boolean value as the value</li>
+<li>For each item, query if the item is in the hashtable:</li>
+<li>if in, then this is a duplicate item</li>
+<li>if not in, then this is not a duplicate item and add the item to the hash table</li>
+</ol>
+<p>cost: O(N)</p>
+<h3 id="5-group-by">5. Group by</h3>
+<h4 id="51-what-is-group-byexample">5.1 What is group by(example)</h4>
+<blockquote>
+<p>Suppose we have a select query as following. The group by groups the rows that has the same address and returns the sum of income for each address.</p>
+</blockquote>
+<p><img alt="image-20231114155139244" src="../csc443.assets/image-20231114155139244.png" /></p>
+<h4 id="52-implementation-1-sort">5.2 Implementation 1: sort</h4>
+<ol>
+<li>sort the table rows by specific column</li>
+<li>group the rows with the same column value</li>
+</ol>
+<p>​   cost: O(Nlog<sub>2</sub>N)</p>
+<h4 id="53-implementation-2-hash">5.3 Implementation 2: hash</h4>
+<ol>
+<li>Prepare a hashtable with the specific column as the key and list of rows as the value</li>
+<li>For each row of the table, we hash the specific column value:</li>
+<li>if the column value is in the hash table, we append the row to this key/value pair</li>
+<li>if not, we add the column value to the table and append this row to the key's empty list</li>
+</ol>
+<h3 id="6-join">6. Join</h3>
+<p>Join algorithm:</p>
+<ul>
+<li>nested loop</li>
+<li>block nested loop</li>
+<li>index-join</li>
+<li>sort-merge join</li>
+<li>grace hash join</li>
+</ul>
+<p>What is join(example query):</p>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">T1</span><span class="p">,</span><span class="w"> </span><span class="n">T2</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">T1</span><span class="p">.</span><span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T2</span><span class="p">.</span><span class="n">B</span>
+</span></code></pre></div>
+<p><img alt="image-20231208003151371" src="../csc443.assets/image-20231208003151371.png" /></p>
+<h4 id="61-nested-loop">6.1 nested loop</h4>
+<p>Algorithm:</p>
+<ol>
+<li>For each entry in the join column of  table T1: </li>
+<li>
+<p>For each page of table T2:</p>
+<ol>
+<li>Scan and read the whole page of table T2</li>
+<li>find the rows that has the same join column as the entry in this page</li>
+<li>join the rows in table T2 with the row where the entry lies in table T1 and add to the result set</li>
+</ol>
+</li>
+<li>
+<p>cost(O(|T1| · |T2|/B) I/O(can be improved by block nested loop)</p>
+</li>
+</ol>
+<h4 id="62-block-nested-loop">6.2 block nested loop:</h4>
+<p>algorithm 1:</p>
+<ol>
+<li>For each page a in table T1:</li>
+<li>scan and read the whole page t1</li>
+<li>For each page t2 in table T2:<ol>
+<li>scan and read the whole page t2b</li>
+<li>join the rows in page t2 that has the same join column value as any of the rows in page t1</li>
+</ol>
+</li>
+</ol>
+<p>variation 1:</p>
+<ul>
+<li>
+<p>For each block in one relation, scan whole other relation</p>
+</li>
+<li>
+<p>Cost: O(|T1|/B · |T2|/B) I/O</p>
+</li>
+</ul>
+<p>variation 2:</p>
+<ul>
+<li>we read Q pages from T1 for each scan of T2</li>
+<li>Cost: O(|T1|/(B · Q) · |T2|/B) I/O</li>
+</ul>
+<h4 id="63-index-join">6.3 Index join</h4>
+<p>Algorithm1: (suppose we have only have 1 index on the joint column of a table):</p>
+<ol>
+<li>For each entry in one relation T1, </li>
+<li>search index for other relation T2</li>
+</ol>
+<p>cost: O(|T1| * log<sub>B</sub>(|T2|))</p>
+<p>Algorithm2: (Suppose we have 2 index on the joint column of a table, assume unclustered index):</p>
+<ol>
+<li>
+<p>Let 2 pointers <code>ptr1</code>, <code>ptr2</code> point to the first kv pair of the leftmost leaf node of the 2 index. </p>
+</li>
+<li>
+<p>traverse both index. </p>
+</li>
+</ol>
+<p>while(ptr1 &lt; number of total entries in index 1 &amp;&amp; ptr2 &lt; number of total entries in index 2):</p>
+<ol>
+<li>if <code>(*ptr1). key</code>&lt; <code>(*ptr2).key</code>:<ol>
+<li>ptr1++</li>
+</ol>
+</li>
+<li>else if <code>(*ptr1). key</code>&gt; <code>(*ptr2).key</code>:<ol>
+<li>ptr2++</li>
+</ol>
+</li>
+<li>else:<ol>
+<li>get the row pointer from T1 index entry and find the row t1 from T1 through this pointer</li>
+<li>get the row pointer from T2 index entry and find the row t2 from T2 through this pointer</li>
+<li>join row t1 and row t2</li>
+</ol>
+</li>
+</ol>
+<p>cost: O(|T1| + |T2|), since we need to look through the table from the pointer of the index in each iteration</p>
+<h4 id="64-sort-merge-join">6.4 sort-merge join</h4>
+<ol>
+<li>Sort both relations based on join key</li>
+<li>Scan both relations linearly</li>
+</ol>
+<h4 id="65-grace-hash-join">6.5 grace - hash join</h4>
+<p><strong>algorithm:</strong> </p>
+<p>Let T1 be the smaller table, let T2 be the larger table</p>
+<ol>
+<li>Prepare G buffers for the output buffer. Prepare 1 buffer for the input buffer b0. Prepare hash function h1 that has range set {1, 2, ... G} and hash function h2.</li>
+</ol>
+<p>​   <strong>phase 1(partition T1):</strong></p>
+<ol>
+<li>Read each page of T1 into the input buffer b0</li>
+<li>For each entry of the input buffer page:</li>
+<li>apply h1 on the join column value of the entry and assign the entry to the corresponding output buffer index according to the hash value</li>
+<li>if this output buffer is full, flush to the file on disk and we can name this file as "t1-{outputbuffer_index}"</li>
+<li>Once we have done partitioning all the pages for T1. We check the G partition files' sizes on disk. If one partition's size is greater than the total size of buffer pages(G-2 buffer size), we will treat this partition as the T1 in step1 and repartition the partition by applying h1 on the join column value of entry in this file concatenated with "{outputbuffer_index}" until the partition size fits the memory</li>
+</ol>
+<p>​   <strong>Phase 2(partition T2):</strong></p>
+<ol>
+<li>Read each page of T2 into the input buffer page b0</li>
+<li>For each entry of the input buffer page:</li>
+<li>apply h1 on the join column value of the entry and assign the entry to the corresponding output buffer index according to the hash value. If this buffer index is repartioned in step1, we will later need to repartition this buffer again by applying h1 on the join column value concatenated with the outputBuffer index</li>
+<li>if this output buffer is full, flush to the file on disk and we can name this file as "t2-{outputbuffer_index}"</li>
+<li>Once we have done partition all the pages for T1. We don't care if the partitions of t2 fit in memory. However, if this partition group index is repartitioned in stage 1, we need to repartition again</li>
+</ol>
+<p><strong>Phase 3(Join):</strong></p>
+<ol>
+<li>Build the hash table with G-2 pages</li>
+<li>Apply h2 on each entry of T1's partition file and load the T1's partition file into the hashtable(T1's partition file is guranteed to be in memory)</li>
+<li>we read each page of T2's partition into a separate input buffer and apply h2 on each entry of the page to see if this entry's hash value in hash table. If it matches, we delete the entry from the hashtable and output to the output buffer. If the output buffer is full, we flush it to the join table</li>
+</ol>
+<p>cost(2-pass partition for phase 1 &amp; 2, no need to repartition):</p>
+<ul>
+<li>i/o: O(|T1|/B + |T2|/B)</li>
+<li>CPU: O(|T1| + |T2|)</li>
+<li>Memory: O(<span class="arithmatex">\(\sqrt {min(|T1|, |T2|) * B}\)</span>)</li>
+</ul>
+<h3 id="7-cardinality-estimation">7. Cardinality Estimation</h3>
+<p>What is cardinanlity estimation:</p>
+<blockquote>
+<p>In selection query, we have algorithm 1, 2 and 3. There cost are the following:</p>
+<ul>
+<li>log<sub>B</sub>(N) + |Y<sub>j</sub>| I/O</li>
+<li>log<sub>B</sub>(N) + |X<sub>i</sub>|I/O</li>
+<li>2 * log<sub>B</sub>(N) + |X<sub>i</sub>|/B + |Y<sub>j</sub>|/B + |X<sub>i</sub> <span class="arithmatex">\(\cap\)</span> Y<sub>j</sub>| I/O</li>
+</ul>
+<p>They all depend on |Y<sub>j</sub>|, |X<sub>i</sub>| and |X<sub>i</sub> <span class="arithmatex">\(\cap\)</span> Y<sub>j</sub>|. In order to select the best algorithm, we need to know these terms in advance. The way we can do that is to estimate these terms. The approximation is |X<sub>i</sub>| <span class="arithmatex">\(\approx\)</span> N / |X|. Therefore, we need to further estimate |X|. The cardinality esimation is to estimate number of unique values of a column</p>
+</blockquote>
+<h4 id="71-add-to-the-index">7.1 Add to the index</h4>
+<p>let X<sub>i</sub> be the set of rows where X = i,</p>
+<p>if we have an index on column X, we maintain a cardinality counter |X|(where |X| refers to the unique number of X values in the table)</p>
+<p>then |X<sub>i</sub>| <span class="arithmatex">\(\approx\)</span> N / |X|</p>
+<h4 id="72-k-minimum-valuekmv-sketch">7.2 K Minimum Value(KMV) sketch</h4>
+<p>algorithm:</p>
+<ul>
+<li>
+<p>Initialize sketch:</p>
+</li>
+<li>
+<p>We prepare a hash function that takes the X column value and outputs a hash number and a set of size K that can contain K hash number. We call this set a sketch.</p>
+</li>
+<li>
+<p>We first use the hash function to hash each column value of column X. We select K minimum hash number from these column values and put in the sketch</p>
+</li>
+<li>
+<p>Insert column value:</p>
+</li>
+<li>Whenever we insert a row to the table, we compute this row's column hash value and compares the hash value with the K hash value in the sketch, if this hash value is smaller than any of the K hash values in the sketch, we pop the max hash value in the sketch and push this hash value into the sketch</li>
+<li>Cardinality estimimation:</li>
+<li>|X| = (K - 1) * |hashSpace size| / (maximum hash value in sketch)</li>
+</ul>
+<h4 id="73-histogram">7.3 Histogram</h4>
+<p>Algorithm:</p>
+<ol>
+<li>Use histogram to get statistic on number of counts of elements in range of buckets</li>
+</ol>
+<p><img alt="image-20231208204255498" src="../csc443.assets/image-20231208204255498.png" /></p>
+<ol>
+<li>Estimate |X<sub>i</sub>| = (bucket counts) / bucket range</li>
+</ol>
+<h4 id="74-countmin">7.4 CountMin</h4>
+<h3 id="8-query-optimization">8. Query optimization</h3>
+<p>We can optimize the query through the following methods or principles:</p>
+<ul>
+<li>Pushing Selections &amp; Projections</li>
+<li>Operator Fusion</li>
+<li>Consciousness of next operator</li>
+<li>Restrict join space</li>
+</ul>
+<h4 id="81-pushing-selectionsprojections">8.1 Pushing Selections&amp;Projections</h4>
+<p>What is pushing selections&amp;projection:</p>
+<blockquote>
+<p>We can project out useless columns if this column is no longer used after we have made selection based on this column. The goal is to reduce data size flowing through subsequent operators</p>
+</blockquote>
+<p><strong>Ex:</strong></p>
+<p><img alt="image-20231208210407499" src="../csc443.assets/image-20231208210407499.png" /></p>
+<p>if we want to execute query as following on the above T1 and T2:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">Select</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">T1</span><span class="p">,</span><span class="w"> </span><span class="n">T2</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">T1</span><span class="p">.</span><span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T2</span><span class="p">.</span><span class="n">B</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">A</span><span class="o">=</span><span class="err">“…”</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">D</span><span class="o">=</span><span class="err">“…”</span><span class="w"> </span>
+</span></code></pre></div>
+<p>Unoptimized flow:</p>
+<ol>
+<li>selection on T1 and T2:</li>
+<li>select rows based on A in T1</li>
+<li>select rows based on D in T2</li>
+<li>join the selected rows from T1 and T2 through column B(the result table has column: <strong>A, B, C, D</strong>)</li>
+<li>project out column B and D in the table </li>
+</ol>
+<p>Optimized flow:</p>
+<ol>
+<li>selection on T1 and T2:</li>
+<li>select rows based on A in T1</li>
+<li>select rows based on D in T2 and <strong>project out column D</strong></li>
+<li>join the selected rows from T1 and T2 through column B(the result table has column: <strong>A, B, C</strong>)</li>
+<li>Project out column B in the table from step 2</li>
+</ol>
+<h4 id="82-operator-fusion">8.2 Operator fusion</h4>
+<p>What is operator fusion:</p>
+<blockquote>
+<p>Sometimes we can merge work from across multiple logical operators(such as selection, projection) into one operator</p>
+</blockquote>
+<p>Example:</p>
+<p>the grace hash join can fuse the selection and projection in step1 into partition pass phase of join operation and fuse step3 into the join pass of join operation</p>
+<h4 id="83-consciousness-of-next-operation">8.3 Consciousness of next operation</h4>
+<p>What is:</p>
+<blockquote>
+<p>Choosing the algorithm for given operator now may cheapen subsequent ones</p>
+</blockquote>
+<p>Example:</p>
+<p>if we want to execute:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">Select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">T1</span><span class="p">,</span><span class="w"> </span><span class="n">T2</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">T1</span><span class="p">.</span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T2</span><span class="p">.</span><span class="n">X</span><span class="w"> </span><span class="k">Order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">X</span>
+</span></code></pre></div>
+<p>The unoptimized flow:</p>
+<ol>
+<li>join through join hash algorithm</li>
+<li>sort by</li>
+</ol>
+<p>The optimized flow:</p>
+<ol>
+<li>join through sort-merge algorithm</li>
+</ol>
+<h4 id="84-restrict-join-operation">8.4 Restrict join operation</h4>
+<blockquote>
+<p>We can execute a complex join in many different orders.</p>
+<p>Optimizers only consider left-deep joins to restrict the search space</p>
+</blockquote>
+<h2 id="week-11">Week 11</h2>
+<h3 id="1-row-store-vs-column-store">1. Row store vs column store</h3>
+<p><img alt="image-20231121152156096" src="../csc443.assets/image-20231121152156096.png" /></p>
+<p>Example(Row-store): Postgres, MariaDB, etc</p>
+<p>Example(Column-store): MonetDB, Vectorwise, C-Store, Vertica</p>
+<p>Oracle, IBM, Microsoft were Row-store, but now they offered both</p>
+<p>advantage: </p>
+<ul>
+<li>fast if we want to query few columns</li>
+</ul>
+<p>disadvantage:</p>
+<ul>
+<li>bad performance when we insert/update</li>
+</ul>
+<h3 id="2-data-storage-alignment">2. Data storage alignment</h3>
+<p>2.1 How to idenify two different column values belong to the same row</p>
+<ul>
+<li><strong>Implementation attempt:</strong></li>
+</ul>
+<p>For each column, we store a materialized ID</p>
+<p><img alt="image-20231209010358026" src="../csc443.assets/image-20231209010358026.png" /></p>
+<ul>
+<li>
+<p>Drawback: </p>
+</li>
+<li>
+<p>waste storage space because we are storing a new column ID for each column</p>
+</li>
+<li>
+<p>slow down queries by reading more data</p>
+</li>
+<li>
+<p>Soln(positional alignment):</p>
+</li>
+</ul>
+<p>We make the data from different columns in the same offset belong to the same row in column store.</p>
+<p>Then,</p>
+<p>​ Col1(i) = i * width(col1)</p>
+<p>​ Col2(i) = i * width(col2)</p>
+<h3 id="3-get-query">3.  get query</h3>
+<p>Suppose we have following queries:</p>
+<p><img alt="image-20231209012656797" src="../csc443.assets/image-20231209012656797.png" /></p>
+<p><strong>Attempt to implement 1(early materialization):</strong></p>
+<p>algorithm:</p>
+<ol>
+<li>scan column A. </li>
+</ol>
+<p>For each entry we find in column A that satisfies predicate(A):</p>
+<ol>
+<li>calculate the entry offset <code>i</code> in A and read colB(i)</li>
+<li>if colB(i) satisfies predicate(B):<ol>
+<li>we read colC(i)</li>
+</ol>
+</li>
+</ol>
+<p>Problem: this involves random I/O. </p>
+<ul>
+<li>We need to jump from column A to column B to column C and jump back. This is random I/O</li>
+</ul>
+<p><strong>soln 2(late materialization: process one column by a time):</strong></p>
+<ul>
+<li>
+<p>algorithm:</p>
+</li>
+<li>
+<p>scan column A</p>
+</li>
+</ul>
+<p>For each entry we find in column A that satisfies predicate(A)</p>
+<ol>
+<li>
+<p>put its offset in the bitmap <code>a</code></p>
+</li>
+<li>
+<p>For each offset <code>ia</code> in bitmap <code>a</code>:</p>
+</li>
+<li>
+<p>check colB(ia) and see if it satisfies predicate(B)</p>
+</li>
+<li>
+<p>if it satisfies: append to the bitmap <code>b</code></p>
+</li>
+<li>
+<p>For each offset <code>ib</code> in bitmap <code>b</code>:</p>
+</li>
+<li>
+<p>read colC(ib)</p>
+</li>
+<li>
+<p>Advantage:</p>
+</li>
+<li>
+<p>Comparing with early materialization, we are sequentially reading a column</p>
+</li>
+<li>
+<p>how to determine the order of column to query:</p>
+</li>
+<li>KMV sketch</li>
+<li>histograms</li>
+<li>count-min</li>
+</ol>
+<h3 id="4-scan">4. scan</h3>
+<p>To speed up scan,</p>
+<ul>
+<li>we add zone maps, we extra store min-max for each Equally sized partitions (partition size: MBs or GBs).</li>
+</ul>
+<p>Scan:</p>
+<ol>
+<li>access each partition of data.</li>
+</ol>
+<p>For each partition of data:</p>
+<ol>
+<li>
+<p>check if the relevant range is within min and max; if not, skip to the next partition</p>
+</li>
+<li>
+<p>if so, access and read in each page of the partition</p>
+<p>For each page of the partition:</p>
+<ol>
+<li>check if each entry of the page satisfies condition and add to the result set if so.</li>
+</ol>
+</li>
+</ol>
+<h3 id="5-insert">5. Insert</h3>
+<ul>
+<li><strong>attempt 1(In-place updates):</strong></li>
+</ul>
+<p>algorithm:</p>
+<ol>
+<li>Directly add to the end of each column</li>
+</ol>
+<p>cost: O(#cols) I/O</p>
+<ul>
+<li><strong>soln 2(In-memory buffering):</strong></li>
+</ul>
+<p>algorithm:</p>
+<ol>
+<li>Prepare a buffer</li>
+<li>Whenever we insert multiple columns, we align them as rows in buffers</li>
+<li>If the buffer is full, we flush them and append to the end of each column</li>
+</ol>
+<h3 id="6-delete">6. Delete</h3>
+<ul>
+<li>soln</li>
+</ul>
+<p>algorithm:</p>
+<ol>
+<li>use a buffer</li>
+<li>Whenever we delete, we add the offset of the deleted column to the buffer. When we query, we also need to check this buffer.If the buffer is full, we rewrite the whole column without including the column at offset in buffer</li>
+</ol>
+<p>O(N / (Buffer size · B))</p>
+<h3 id="7-update">7. Update</h3>
+<ul>
+<li>soln</li>
+</ul>
+<p>algorithm:</p>
+<ol>
+<li>Use 2 buffers</li>
+<li>The first buffer stores the deleted offset and associated timestamp. The second buffer stores the </li>
+</ol>
+<h3 id="8-simd">8. SIMD</h3>
+<p>What is SIMD instruction:</p>
+<blockquote>
+<p>Apply one instruction in parallel to multiple values within one cache line(e.g: 128 bits-256 bits at a time). This instruction is used to accelate get query and so on</p>
+</blockquote>
+<p><strong>Ex from slide:</strong></p>
+<p>Suppose we have query <code>select sum(A) from table where A &gt; 5</code> and the column A is in cache with value(3, 1, 7, 4, 8, 9, 2,8), here is what SIMD does:</p>
+<ol>
+<li>perform check with (A &gt; 5) on every value to obtain boolean value</li>
+</ol>
+<p><img alt="image-20231209150035489" src="../csc443.assets/image-20231209150035489.png" /></p>
+<ol>
+<li>multiply the value by the boolean value in cache through SIMD</li>
+</ol>
+<p><img alt="image-20231209145934505" src="../csc443.assets/image-20231209145934505.png" /></p>
+<ol>
+<li>load the resulting value in cache line from step 2 to cpu registers/counters(where the counter value is initially 0 in the following screen) through SIMD</li>
+</ol>
+<p><img alt="image-20231209150300892" src="../csc443.assets/image-20231209150300892.png" /></p>
+<ol>
+<li>Sum the C1 to C8 register values together to get the result</li>
+</ol>
+<h3 id="9-compression">9. Compression</h3>
+<p>(slide p99 - )</p>
+<p>Why do we need compression:</p>
+<blockquote>
+<p>The goal is not only to save storage space, but also reduce I/O if we save storage space to improve performance</p>
+</blockquote>
+<p>Here r 3 ways to compress:</p>
+<h4 id="91-bit-vector-encoding">9.1 Bit vector encoding</h4>
+<p>(slide p 105)</p>
+<p>Encode one bit string or one bit for each possible value indicating if the entry has the given value </p>
+<ul>
+<li>Pro: good and fast if we don't have many unique values for this column</li>
+<li>con: Only applicable if there are very few values</li>
+</ul>
+<h4 id="92-dictionary-encoding">9.2 Dictionary encoding</h4>
+<p>(slide p109)</p>
+<ol>
+<li>employ a dictionary with smaller strings to represent the original column value</li>
+<li>replace the original column value with the smaller string in the compressed column</li>
+</ol>
+<h4 id="93-run-length-encoding">9.3 Run-length encoding</h4>
+<ol>
+<li>
+<p>represent repeating values using one entry</p>
+</li>
+<li>
+<p>pro: compatible with dictionary encoding and can further improve compression</p>
+</li>
+<li>cons: must scan column to get entry at a given entry. In the original column, if we are given the offset <code>i</code>, we can just find col(i) in O(1) time. However, in the compressed column, the i<sup>th</sup> value is compressed, we need to determine which value's run the col(i) belongs to.</li>
+</ol>
+<h3 id="10-index-get-query">10. Index get query</h3>
+<ul>
+<li>sort late materialization</li>
+<li>column projections</li>
+<li>database cracking</li>
+</ul>
+<p>Suppose we have an unclustered index and a table of column A, B, C, D. We want to execute the following query:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">Select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">B</span><span class="p">)</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span>
+</span></code></pre></div>
+<p>Algorithm 1(combining with late materialization, ex from slide p127):</p>
+<ol>
+<li>we search the index for the start of the query element</li>
+<li>we scan the index from the start and add every quelified key's associated disk pointer to the intermediate set</li>
+<li>we sort the disk pointer(which is the offset)</li>
+<li>Then we search column B from the sorted disk pointer(Access to column B becomes “skipsequential” rather than random from step 3)</li>
+</ol>
+<p>Algorithm 2(Column projection):</p>
+<ul>
+<li><strong>Initialized data:</strong> we have the column A be sorted. We also duplicate column B be sorted by A so that each column offset from B matches each column offset from A.</li>
+<li><strong>Query &amp; scan:</strong></li>
+<li>We scan the column A to find the matching column ID from A</li>
+<li>Since A is sorted and B is sorted by A, the column ID will automatically sorted. When we look column B through the column IDs, the lookup becomes skip sequential rather than random</li>
+</ul>
+<p>Algorithm 3(db cracking):</p>
+<ul>
+<li><strong>Initialize:</strong></li>
+<li>create a cracking column copy of the column</li>
+<li>we also duplicate other columns to be ordered by this column</li>
+<li><strong>Query &amp; scan:</strong></li>
+<li>When we query/scan based on some upperbound/lowerbound, we will use this bound as pivot to partition the cracking column</li>
+</ul>
+<h2 id="week-12">Week 12</h2>
+<h3 id="1-transaction">1. Transaction</h3>
+<p>transaction component:</p>
+<ul>
+<li>begin txn</li>
+<li>some commands in SQL</li>
+<li>Commit or abort</li>
+</ul>
+<h3 id="2-common-inconsistency-problem">2. Common inconsistency problem</h3>
+<p><img alt="image-20231128152025161" src="../csc443.assets/image-20231128152025161.png" /></p>
+<p>ACID prevents the following inconsistency problems:</p>
+<ul>
+<li>system failure</li>
+<li>power failure</li>
+<li>hardware failure</li>
+<li>data center failure</li>
+<li>concurrency:</li>
+<li>dirty read</li>
+<li>Unrepeatable read</li>
+<li>phantom read: during a transaction, new rows are added (or deleted) by another transaction to the records being read between 2 accesses of the transaction</li>
+</ul>
+<h3 id="3-lock">3. Lock</h3>
+<ul>
+<li>simple soln: lock</li>
+</ul>
+<h4 id="31-shared-read-lock">3.1 Shared read lock</h4>
+<p>Shared locks allow multiple transactions to read the same data, but prevent any transaction from modifying it</p>
+<p>Dirty read: a transaction reads a modified but uncommited data item from other transactions</p>
+<h4 id="32-exclusive-lock">3.2 Exclusive lock</h4>
+<p>Exclusive locks allow a transaction to modify the data, but prevent any other transaction from reading or modifying it</p>
+<p>unrepeatable read anomaly: subsequent reads of the same data are inconsistent as the data was changed in-between(these data are comitted)</p>
+<h4 id="33-compare-2-locks">3.3 Compare 2 locks</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Shared read locks</th>
+<th>exclusive lock</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>problem</td>
+<td>unrepeatable read</td>
+<td>dirty reads</td>
+</tr>
+<tr>
+<td></td>
+<td>Issued when transaction wants to read item that do not have an exclusive lock.</td>
+<td>Issued when transaction wants to update unlocked item.</td>
+</tr>
+<tr>
+<td></td>
+<td>Any number of transaction can hold shared lock on an item.</td>
+<td>Exclusive lock can be hold by only one transaction.</td>
+</tr>
+<tr>
+<td></td>
+<td>Example: Multiple transactions reading the same data</td>
+<td>Example: Transaction updating a table row</td>
+</tr>
+</tbody>
+</table>
+<h4 id="34-lock-manager">3.4 Lock Manager</h4>
+<p>lock manager -  a hash table</p>
+<p><img alt="image-20231128154304085" src="../csc443.assets/image-20231128154304085.png" /></p>
+<ul>
+<li>type refers to: either shared read lock or exclusive write lock</li>
+<li>lock count: how many txns hold the shared lock</li>
+<li>queue of waiting requests: what txn to invoke next when this lock is released</li>
+</ul>
+<p>lock vs latches:</p>
+<p><img alt="image-20231128154527566" src="../csc443.assets/image-20231128154527566.png" /></p>
+<h3 id="4-inconsistency-problem-soln">4.  Inconsistency problem soln</h3>
+<p>2 phase locking:</p>
+<ul>
+<li>in phase 1: lock a data item(e.g: row) when it is accessed first time(Invariant: a data item that has been accessed cannot be modified until txn commits)</li>
+<li>in phase 2: release all locks(commit)</li>
+</ul>
+<p><strong>How lock is used on index query(Lock-Coupling):</strong></p>
+<p>During the following query:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">...</span><span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="p">...</span>
+</span></code></pre></div>
+<p>index locking:</p>
+<p>Instead of locking the whole table, we lock the B-tree leaf node where the the relevant range lies in.</p>
+<p>coupling algorithm(bTree selection):</p>
+<ol>
+<li>var parent = bTree.root</li>
+<li>lock the parent with shared read lock</li>
+<li>var curr = parent.child  // let curr points to the child of the parent on search path</li>
+<li>while(curr is not a leaf)</li>
+<li>lock the node pointed by curr with read lock</li>
+<li>if the curr node is successfully locked:<ol>
+<li>release the lock on parent</li>
+<li>parent = curr</li>
+<li>curr = parent.child // let curr points to the child of the parent on search path</li>
+</ol>
+</li>
+<li>lock curr node with shared lock</li>
+</ol>
+<p><strong>How lock is used on update query:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">update</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">‘…’</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">‘…’</span>
+</span></code></pre></div>
+<p>coupling algorithm(bTree update/insert):</p>
+<ol>
+<li>
+<p>var parent = bTree.root</p>
+</li>
+<li>
+<p>lock the parent with shared read lock</p>
+</li>
+</ol>
+<p><strong>phase 1(traversal of bTree to find the leaf):</strong></p>
+<ol>
+<li>
+<p>var curr = parent.child  // let curr points to the child of the parent on search path</p>
+</li>
+<li>
+<p>while(curr is not a leaf)</p>
+</li>
+<li>
+<p>lock the node pointed by curr with read lock</p>
+</li>
+<li>if the curr node is successfully locked:<ol>
+<li>if curr is not full:<ol>
+<li>release the lock on parent</li>
+</ol>
+</li>
+<li>parent = curr</li>
+<li>curr = parent.child // let curr points to the child of the parent on search path</li>
+</ol>
+</li>
+</ol>
+<p><strong>phase 2(lock and update the leaf node):</strong></p>
+<ol>
+<li>
+<p>lock <code>curr</code> node with exclusive write lock  // now the leaf node is locked by write lock</p>
+</li>
+<li>
+<p>if curr is not full:</p>
+</li>
+<li>
+<p>release the read lock on parent</p>
+</li>
+<li>
+<p>update the leaf node pointed by <code>curr</code></p>
+</li>
+<li>
+<p>else:  // insertion</p>
+</li>
+<li>
+<p>split the leaf node pointer by <code>curr</code></p>
+</li>
+<li>lock the newly splited node with exclusive lock</li>
+<li>upgrade the lock on node pointed by <code>parent</code> to write lock</li>
+<li>write the pointer to the newly splitted node in <code>parent</code> node</li>
+</ol>
+<p><strong>phase 3(propagate split upwards):</strong></p>
+<ol>
+<li>
+<p>curr = parent</p>
+</li>
+<li>
+<p>parent = parent.parent</p>
+</li>
+<li>
+<p>while(curr != bTree.root):</p>
+<ol>
+<li>if curr is full:</li>
+<li>split <code>curr</code> node</li>
+<li>lock the newly splitted node with exclusive lock</li>
+<li>upgrade the lock on node pointed by <code>parent</code> to write lock</li>
+<li>write the pointer to the newly splitted node in <code>parent</code> node</li>
+<li>curr = parent</li>
+<li>parent = parent.parent</li>
+</ol>
+</li>
+<li>
+<p>if curr is full:</p>
+<ol>
+<li>split <code>curr</code> node</li>
+<li>lock the newly splitted node with exclusive lock</li>
+<li>create a new root node and lock it with exclusive lock</li>
+<li>write the pointer to the newly splitted node in <code>parent</code> node</li>
+</ol>
+</li>
+<li>
+<p>release all locks(commit)</p>
+</li>
+</ol>
+<h3 id="5-deadlock-in-2-phase-locking">5. Deadlock in 2 phase locking</h3>
+<p>how to prevent:</p>
+<p>SOln1:</p>
+<ul>
+<li>record before-image for all changes to the DB in a sequential log</li>
+<li>If transaction aborts before completing, we undo its changes via its before-images in the log</li>
+</ul>
+<p>Soln2(Timeout):</p>
+<p>Soln3(Abort on wait):</p>
+<h3 id="6-recovery">6. Recovery</h3>
+<p>Background:</p>
+<blockquote>
+<p>We have the following system failure:</p>
+<ul>
+<li>Media failure(covered by RAID)</li>
+<li>Power failure</li>
+<li>Data center failure</li>
+</ul>
+<p>For this section, we cover how to recover from power failure</p>
+</blockquote>
+<p>What should be done if power failure occurs between a set of operations:</p>
+<ol>
+<li>wrap the set of operations  in a transaction</li>
+<li>write changes to by each transaction in a log</li>
+<li>after power fails, scan log and cancel effects of uncommited transactions</li>
+</ol>
+<p>For step 2, we have 3 different types:</p>
+<ul>
+<li>undo</li>
+<li>redo</li>
+<li>redo/redo</li>
+</ul>
+<h4 id="61-undo">6.1 Undo</h4>
+<p>background</p>
+<blockquote>
+<p>When we want to update data from db,</p>
+</blockquote>
+<p><strong>attempt 1:</strong></p>
+<ul>
+<li>
+<p>Before failure:</p>
+</li>
+<li>
+<p>Load the original data from db to buffer</p>
+</li>
+<li>mark the transaction start in log buffer</li>
+<li>update the data to new data in buffer pool</li>
+<li>write the old data into the log buffer after transaction start</li>
+<li>flush the log buffer to log</li>
+<li>flush the new data from the buffer to the db</li>
+<li>add the commit tag of the txn in log buffer</li>
+<li>
+<p>flush the commit tag of all transactions(including this one and other) on log on disk</p>
+</li>
+<li>
+<p>During recovery:</p>
+</li>
+<li>
+<p>traverse the log backwards. </p>
+<p>For each of the uncommited transaction:</p>
+<ol>
+<li>read the data in transaction from the db to the buffer pool</li>
+<li>Set the data back to the old version recorded in transaction in buffer pool</li>
+<li>flush to the database</li>
+<li>add unroll record in transaction log</li>
+</ol>
+</li>
+</ul>
+<p>Problem:</p>
+<blockquote>
+<p>If we have a transaction that has not been commited at the start of the transaction log, we need to read till the begining of the transaction log. That would take long time.</p>
+</blockquote>
+<p>soln 2:(add checkpoint)</p>
+<ul>
+<li>checkpointing:</li>
+<li>When there is  some number of txn commit tags in log buffer, stop accepting new txns &amp; wait until all txn in log buffer commits to log</li>
+<li>flush to storage</li>
+<li>
+<p>add checkpoint record to log buffer and flush again</p>
+</li>
+<li>
+<p>Recovery:</p>
+</li>
+<li>
+<p>traverse from the end of the log up to first checkpoint record we encounter and scan each uncommited txns.</p>
+<p>For each of the uncommited transaction:</p>
+<ol>
+<li>read the data in transaction from the db to the buffer pool</li>
+<li>Set the data back to the old version recorded in transaction in buffer pool</li>
+<li>flush to the database</li>
+<li>add unroll record in transaction log</li>
+</ol>
+</li>
+</ul>
+<p>Undo problem:</p>
+<ul>
+<li>when we force the data from buffer pool to db, this entails lots of random I/O</li>
+</ul>
+<h4 id="62-redo">6.2 Redo</h4>
+<ul>
+<li>
+<p>before failure:</p>
+</li>
+<li>
+<p>load the original data from db to buffer pool</p>
+</li>
+<li>mark the txn start in log buffer</li>
+<li>update the buffer pool and add new data of the transaction in log buffer</li>
+<li>mark commit in log buffer</li>
+<li>flush log buffer to disk</li>
+<li>
+<p>flush changed data at buffer to storage at leisure/buffer is full</p>
+</li>
+<li>
+<p>recovery:</p>
+</li>
+<li>
+<p>traverse log forward. </p>
+<p>For each transaction:</p>
+<ol>
+<li>if the transaction is not marked commited:<ol>
+<li>we mark the transaction as rollback and do nothing</li>
+</ol>
+</li>
+<li>else:<ol>
+<li>replay the txn</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p>problem:</p>
+<ul>
+<li>the buffer pool needs to hold the data until the transaction has comitted, while the undo method has already flushed the changed data from buffer after the txn from log buffer flushed and  before log buffer flush commit to disk</li>
+</ul>
+<h4 id="63-undoredo">6.3 Undo/Redo</h4>
+<ol>
+<li>load the old data into buffer pool</li>
+<li>mark the txn start in log buffer</li>
+<li>for each update in transaction:</li>
+<li>update data in buffer and write its old version and new version in log buffer</li>
+<li>may flush to the log if leisure or not full</li>
+<li>the buffer pool may evict this data to db if leisure(but if the log has not been flushed, cannot flush even leisure)</li>
+<li>flush commited to transaction log</li>
+</ol>
+<p>recovery:</p>
+<ol>
+<li>scan the log up to the first checkpoint:</li>
+<li>for each txn:</li>
+<li>if the txn is uncommited(no commit tag in log):<ol>
+<li>undo and add rollback tag to the txn</li>
+</ol>
+</li>
+<li>else:<ol>
+<li>replay</li>
+</ol>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.expand"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="../mathjax/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
