@@ -1,12 +1,13 @@
 # This is a basic workflow to help you get started with Actions
-
+# complete process of uploading static pages: https://stackoverflow.com/q/72504998/16144447
+# TODO: comment out workflow_dispatch and add push event
 name: CI
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  # push:
-  #  branches: [ "main" ]
+  push:
+    branches: ["main"]
   pull_request:
     branches: ["main"]
 
