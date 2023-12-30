@@ -33,10 +33,17 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.8.0'
+      
+      - name: set up npm
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
 
-      - name: Install mkdocs-material
+      
+
+      - name: Install dependencies
         run: |
-          scripts/install-mkdocs.sh
+          scripts/install-dependencies.sh
 
       - name: build pages:
         run: |
@@ -44,9 +51,11 @@ jobs:
 
       # upload the artifacts
       - name: Upload build pages as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v2
         with:
           path: sites/
+          name: github-pages
+          
 
       # deploy pages to github hosted runner
       - name: Deploy pages
