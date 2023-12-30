@@ -8,7 +8,7 @@ on:
   # push:
   #  branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,20 +32,18 @@ jobs:
       - name: set up python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8.0'
-      
+          python-version: "3.8.0"
+
       - name: set up npm
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-
-      
+          node-version: "16.x"
 
       - name: Install dependencies
         run: |
           scripts/install-dependencies.sh
 
-      - name: build pages:
+      - name: build pages
         run: |
           mkdocs build
 
@@ -55,7 +53,6 @@ jobs:
         with:
           path: sites/
           name: github-pages
-          
 
       # deploy pages to github hosted runner
       - name: Deploy pages
