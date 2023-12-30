@@ -51,7 +51,7 @@ jobs:
       - name: Upload build pages as artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: sites/
+          path: site/
           name: github-pages
 
       # deploy pages to github hosted runner
