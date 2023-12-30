@@ -63,7 +63,7 @@ jobs:
           path: site/
 
       - name: Upload artifact
-        uses: actions/artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: /home/runner/work/_temp/artifact.tar
