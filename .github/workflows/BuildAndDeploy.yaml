@@ -41,7 +41,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          scripts/install-dependencies.sh
+          chmod u+x scripts/install-dependencies.sh && scripts/install-dependencies.sh
 
       - name: build pages
         run: |
