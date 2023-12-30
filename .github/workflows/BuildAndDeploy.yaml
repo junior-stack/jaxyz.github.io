@@ -39,15 +39,15 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
-      - name: set up python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.8"
+      # - name: set up python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: "3.8"
 
-      - name: set up npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: "16.x"
+      # - name: set up npm
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: "16.x"
 
       - name: Install dependencies
         run: |
