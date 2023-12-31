@@ -6,7 +6,7 @@ theme:
     - content.code.copy
     - content.code.annotate
     - navigation.expand
-    - navigation.tabs
+    # - navigation.tabs
   # navigation_depth: 5
 
 # markdown_extensions:
