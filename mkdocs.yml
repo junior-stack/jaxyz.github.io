@@ -38,3 +38,4 @@ plugins:
   - literate-nav:
       nav_file: navigation.md
   - macros
+  - search
